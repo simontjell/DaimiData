@@ -270,10 +270,10 @@ def generate_html(analysis_data):
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title is-1 has-text-white">
-                        PhD-statistik
+                        ph.d.-statistik
                     </h1>
                     <h2 class="subtitle has-text-white">
-                        For Datalogisk Institut ved Aarhus Universitet
+                        for Datalogisk Institut ved Aarhus Universitet
                     </h2>
                     <div class="columns is-centered mt-5">
                         <div class="column is-2">
@@ -331,7 +331,7 @@ def generate_html(analysis_data):
                     <div v-if="activeTab === 'first'" key="first">
                         <h2 class="title is-3 has-text-centered mb-5">
                             <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
-                            De Ti Første ph.d.'er
+                            De 10 første ph.d.'er
                         </h2>
                         <div class="columns is-multiline">
                             <div v-for="(phd, index) in firstPhds" :key="index" class="column is-12">
@@ -356,7 +356,7 @@ def generate_html(analysis_data):
                     <div v-else-if="activeTab === 'supervisors'" key="supervisors">
                         <h2 class="title is-3 has-text-centered mb-5">
                             <span class="icon"><i class="fas fa-user-tie"></i></span>
-                            De Ti Mest Brugte Vejledere
+                            De 10 mest brugte vejledere
                         </h2>
                         <div class="columns is-multiline">
                             <div v-for="(supervisor, index) in topSupervisors" :key="index" class="column is-6">
@@ -385,7 +385,7 @@ def generate_html(analysis_data):
                     <div v-else-if="activeTab === 'chains'" key="chains">
                         <h2 class="title is-3 has-text-centered mb-5">
                             <span class="icon"><i class="fas fa-link"></i></span>
-                            De Længste Vejleder-Kæder
+                            De længste vejlederkæder
                         </h2>
                         <div class="content has-text-centered mb-5">
                             <p class="subtitle is-6">
@@ -417,7 +417,7 @@ def generate_html(analysis_data):
                     <div v-else-if="activeTab === 'descendants'" key="descendants">
                         <h2 class="title is-3 has-text-centered mb-5">
                             <span class="icon"><i class="fas fa-sitemap"></i></span>
-                            Vejledere med Flest Efterkommere
+                            De 10 største akademiske stamtræer
                         </h2>
                         <div class="content has-text-centered mb-5">
                             <p class="subtitle is-6">
@@ -454,7 +454,7 @@ def generate_html(analysis_data):
         <footer class="footer">
             <div class="content has-text-centered" id="about">
                 <p>
-                    <strong>DaimiData.dk er udviklet af <a href>simplesystemer.dk</a> v/Simon Tjell (Daimi-PhD #169)</strong> 
+                    <strong>DaimiData.dk er udviklet af <a href>simplesystemer.dk</a> v/Simon Tjell (Daimi-ph.d. #169)</strong> 
                     <br>
                     på baggrund af <a href="https://cs.au.dk/education/phd/phds-produced/">data</a> fra Datalogisk Institut, Aarhus Universitet
                     <br>
