@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Rapport - AU Computer Science</title>
+    <title>daimidata.dk</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
@@ -94,15 +94,15 @@
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title is-1 has-text-white">
-                        PhD Rapport
+                        PhD-statistik
                     </h1>
                     <h2 class="subtitle has-text-white">
-                        Department of Computer Science, Aarhus University
+                        For Datalogisk Institut ved Aarhus Universitet
                     </h2>
                     <div class="columns is-centered mt-5">
                         <div class="column is-2">
                             <div class="stat-number">{{ stats.total_phds }}</div>
-                            <p class="has-text-white">PhD'er Total</p>
+                            <p class="has-text-white">ph.d.'er Total</p>
                         </div>
                         <div class="column is-2">
                             <div class="stat-number">{{ stats.total_supervisors }}</div>
@@ -125,7 +125,7 @@
                         <li :class="{'is-active': activeTab === 'first'}">
                             <a @click="activeTab = 'first'">
                                 <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
-                                <span>Første PhD'er</span>
+                                <span>Første ph.d.'er</span>
                             </a>
                         </li>
                         <li :class="{'is-active': activeTab === 'supervisors'}">
@@ -155,7 +155,7 @@
                     <div v-if="activeTab === 'first'" key="first">
                         <h2 class="title is-3 has-text-centered mb-5">
                             <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
-                            De Ti Første PhD'er
+                            De Ti Første ph.d.'er
                         </h2>
                         <div class="columns is-multiline">
                             <div v-for="(phd, index) in firstPhds" :key="index" class="column is-12">
@@ -213,8 +213,7 @@
                         </h2>
                         <div class="content has-text-centered mb-5">
                             <p class="subtitle is-6">
-                                Akademiske stamtræer hvor PhD-studerende senere blev vejledere og vejledte nye PhD'er.
-                                Viser kontinuerlig vidensoverførsel gennem generationer af forskere.
+                                Akademiske kæder hvor ph.d.-studerende senere selv blev vejledere og vejledte nye ph.d.'er.
                             </p>
                         </div>
                         <div v-for="(chain, index) in longestChains" :key="index" class="box mb-4">
@@ -247,7 +246,7 @@
                         <div class="content has-text-centered mb-5">
                             <p class="subtitle is-6">
                                 Akademiske familier - vejledere med det største samlede antal efterkommere gennem alle generationer.
-                                Inkluderer både direkte studerende og deres efterfølgende PhD-studerende.
+                                Inkluderer både direkte studerende og deres efterfølgende ph.d.-studerende.
                             </p>
                         </div>
                         <div class="columns is-multiline">
@@ -277,9 +276,11 @@
         </section>
 
         <footer class="footer">
-            <div class="content has-text-centered">
+            <div class="content has-text-centered" id="about">
                 <p>
-                    <strong>PhD Rapport</strong> - Department of Computer Science, Aarhus University
+                    <strong>DaimiData.dk er udviklet af <a href>simplesystemer.dk</a> v/Simon Tjell (Daimi-PhD #169)</strong> 
+                    <br>
+                    på baggrund af <a href="https://cs.au.dk/education/phd/phds-produced/">data</a> fra Datalogisk Institut, Aarhus Universitet
                     <br>
                     Genereret: {{ generatedDate }}
                 </p>
@@ -299,7 +300,7 @@
                     topSupervisors: [{"name": "Ivan Bjerre Damg\u00e5rd", "count": 36}, {"name": "Kaj Gr\u00f8nb\u00e6k", "count": 26}, {"name": "Mogens Nielsen", "count": 18}, {"name": "Ole Lehrmann Madsen", "count": 17}, {"name": "Olivier Danvy", "count": 17}, {"name": "Susanne B\u00f8dker", "count": 15}, {"name": "Peter Bro Miltersen", "count": 15}, {"name": "Anders M\u00f8ller", "count": 14}, {"name": "Gerth St\u00f8lting Brodal", "count": 13}, {"name": "Lars Birkedal", "count": 13}],
                     longestChains: [{"path": ["Arto Salomaa", "Sven Skyum", "Peter Bro Miltersen", "Kristoffer Arnsfelt Hansen", "Kasper H\u00f8gh"], "years": [null, 1975, 1993, 2006, 2023], "length": 5}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Marianne Graves", "Karl-Emil Kj\u00e6r Bilstrup"], "years": [null, 1987, 2003, 2023], "length": 4}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Marianne Graves", "Magnus H\u00f8holt Kaspersen"], "years": [null, 1987, 2003, 2023], "length": 4}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Clemens Nylandsted Klokmose", "Marcel Borowski"], "years": [null, 1987, 2009, 2022], "length": 4}, {"path": ["Morten Kyng", "Kaj Gr\u00f8nb\u00e6k", "Niels Olof Bouvin", "Morten Boh\u00f8j"], "years": [null, 1991, 2001, 2011], "length": 4}],
                     topDescendants: [{"name": "Morten Kyng", "descendants": 54}, {"name": "Peter Landrock", "descendants": 52}, {"name": "Ivan Bjerre Damg\u00e5rd", "descendants": 51}, {"name": "Arto Salomaa", "descendants": 50}, {"name": "Erik Meineche Schmidt", "descendants": 45}, {"name": "Sven Skyum", "descendants": 29}, {"name": "Kaj Gr\u00f8nb\u00e6k", "descendants": 29}, {"name": "Ole Lehrmann Madsen", "descendants": 24}, {"name": "Michael I. Schwartzbach", "descendants": 22}, {"name": "Mogens Nielsen", "descendants": 19}],
-                    generatedDate: '16-08-2025 21:54'
+                    generatedDate: '16-08-2025 22:16'
                 }
             }
         }).mount('#app');

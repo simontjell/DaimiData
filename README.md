@@ -1,6 +1,6 @@
-# DaimiData - PhD Analysis for AU Computer Science
+# DaimiData - ph.d.-analyse for Datalogisk Institut
 
-Automated analysis and visualization of PhD dissertations from the Department of Computer Science at Aarhus University.
+Automatiseret analyse og visualisering af ph.d.-afhandlinger fra Datalogisk Institut ved Aarhus Universitet.
 
 ## 🎯 Features
 

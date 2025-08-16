@@ -179,7 +179,7 @@ def generate_html(analysis_data):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Rapport - AU Computer Science</title>
+    <title>daimidata.dk</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
@@ -270,15 +270,15 @@ def generate_html(analysis_data):
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title is-1 has-text-white">
-                        PhD Rapport
+                        PhD-statistik
                     </h1>
                     <h2 class="subtitle has-text-white">
-                        Department of Computer Science, Aarhus University
+                        For Datalogisk Institut ved Aarhus Universitet
                     </h2>
                     <div class="columns is-centered mt-5">
                         <div class="column is-2">
                             <div class="stat-number">{{{{ stats.total_phds }}}}</div>
-                            <p class="has-text-white">PhD'er Total</p>
+                            <p class="has-text-white">ph.d.'er ialt</p>
                         </div>
                         <div class="column is-2">
                             <div class="stat-number">{{{{ stats.total_supervisors }}}}</div>
@@ -301,7 +301,7 @@ def generate_html(analysis_data):
                         <li :class="{{'is-active': activeTab === 'first'}}">
                             <a @click="activeTab = 'first'">
                                 <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
-                                <span>Første PhD'er</span>
+                                <span>Første ph.d.'er</span>
                             </a>
                         </li>
                         <li :class="{{'is-active': activeTab === 'supervisors'}}">
@@ -331,7 +331,7 @@ def generate_html(analysis_data):
                     <div v-if="activeTab === 'first'" key="first">
                         <h2 class="title is-3 has-text-centered mb-5">
                             <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
-                            De Ti Første PhD'er
+                            De Ti Første ph.d.'er
                         </h2>
                         <div class="columns is-multiline">
                             <div v-for="(phd, index) in firstPhds" :key="index" class="column is-12">
@@ -389,8 +389,7 @@ def generate_html(analysis_data):
                         </h2>
                         <div class="content has-text-centered mb-5">
                             <p class="subtitle is-6">
-                                Akademiske stamtræer hvor PhD-studerende senere blev vejledere og vejledte nye PhD'er.
-                                Viser kontinuerlig vidensoverførsel gennem generationer af forskere.
+                                Akademiske kæder hvor ph.d.-studerende senere selv blev vejledere og vejledte nye ph.d.'er.
                             </p>
                         </div>
                         <div v-for="(chain, index) in longestChains" :key="index" class="box mb-4">
@@ -423,7 +422,7 @@ def generate_html(analysis_data):
                         <div class="content has-text-centered mb-5">
                             <p class="subtitle is-6">
                                 Akademiske familier - vejledere med det største samlede antal efterkommere gennem alle generationer.
-                                Inkluderer både direkte studerende og deres efterfølgende PhD-studerende.
+                                Inkluderer både direkte studerende og deres efterfølgende ph.d.-studerende.
                             </p>
                         </div>
                         <div class="columns is-multiline">
@@ -453,9 +452,11 @@ def generate_html(analysis_data):
         </section>
 
         <footer class="footer">
-            <div class="content has-text-centered">
+            <div class="content has-text-centered" id="about">
                 <p>
-                    <strong>PhD Rapport</strong> - Department of Computer Science, Aarhus University
+                    <strong>DaimiData.dk er udviklet af <a href>simplesystemer.dk</a> v/Simon Tjell (Daimi-PhD #169)</strong> 
+                    <br>
+                    på baggrund af <a href="https://cs.au.dk/education/phd/phds-produced/">data</a> fra Datalogisk Institut, Aarhus Universitet
                     <br>
                     Genereret: {{{{ generatedDate }}}}
                 </p>
