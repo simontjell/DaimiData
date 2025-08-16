@@ -286,7 +286,7 @@ def generate_html(analysis_data):
                         </div>
                         <div class="column is-2">
                             <div class="stat-number">{{{{ stats.year_span }}}}</div>
-                            <p class="has-text-white">År Spændt</p>
+                            <p class="has-text-white">Årrække</p>
                         </div>
                     </div>
                 </div>
