@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhD Rapport - AU Computer Science</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .box {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .chain-person {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.25rem;
+            font-weight: 500;
+        }
+        .chain-arrow {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+        .rank-badge {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        .timeline-item {
+            border-left: 3px solid #667eea;
+            padding-left: 1.5rem;
+            margin-left: 1rem;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 3px solid white;
+        }
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.5s;
+        }
+        .fade-enter-from, .fade-leave-to {
+            opacity: 0;
+        }
+        .descendants-bar {
+            height: 10px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            transition: width 0.5s ease;
+        }
+        .chain-length-badge {
+            background: #00d1b2;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1 has-text-white">
+                        PhD Rapport
+                    </h1>
+                    <h2 class="subtitle has-text-white">
+                        Department of Computer Science, Aarhus University
+                    </h2>
+                    <div class="columns is-centered mt-5">
+                        <div class="column is-2">
+                            <div class="stat-number">{{ stats.total_phds }}</div>
+                            <p class="has-text-white">PhD'er Total</p>
+                        </div>
+                        <div class="column is-2">
+                            <div class="stat-number">{{ stats.total_supervisors }}</div>
+                            <p class="has-text-white">Vejledere</p>
+                        </div>
+                        <div class="column is-2">
+                            <div class="stat-number">{{ stats.year_span }}</div>
+                            <p class="has-text-white">År Spændt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Navigation Tabs -->
+                <div class="tabs is-centered is-boxed is-large">
+                    <ul>
+                        <li :class="{'is-active': activeTab === 'first'}">
+                            <a @click="activeTab = 'first'">
+                                <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
+                                <span>Første PhD'er</span>
+                            </a>
+                        </li>
+                        <li :class="{'is-active': activeTab === 'supervisors'}">
+                            <a @click="activeTab = 'supervisors'">
+                                <span class="icon"><i class="fas fa-user-tie"></i></span>
+                                <span>Top Vejledere</span>
+                            </a>
+                        </li>
+                        <li :class="{'is-active': activeTab === 'chains'}">
+                            <a @click="activeTab = 'chains'">
+                                <span class="icon"><i class="fas fa-link"></i></span>
+                                <span>Længste Kæder</span>
+                            </a>
+                        </li>
+                        <li :class="{'is-active': activeTab === 'descendants'}">
+                            <a @click="activeTab = 'descendants'">
+                                <span class="icon"><i class="fas fa-sitemap"></i></span>
+                                <span>Flest Efterkommere</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Content -->
+                <transition name="fade" mode="out-in">
+                    <!-- First PhDs Tab -->
+                    <div v-if="activeTab === 'first'" key="first">
+                        <h2 class="title is-3 has-text-centered mb-5">
+                            <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
+                            De Ti Første PhD'er
+                        </h2>
+                        <div class="columns is-multiline">
+                            <div v-for="(phd, index) in firstPhds" :key="index" class="column is-12">
+                                <div class="box timeline-item">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div>
+                                                <span class="rank-badge">#{{ index + 1 }}</span>
+                                                <span class="title is-5">{{ phd.name }}</span>
+                                                <span class="tag is-primary is-light ml-3">{{ phd.year }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-2"><strong>Vejleder:</strong> {{ phd.supervisors }}</p>
+                                    <p class="mt-2 has-text-grey">{{ phd.title }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Supervisors Tab -->
+                    <div v-else-if="activeTab === 'supervisors'" key="supervisors">
+                        <h2 class="title is-3 has-text-centered mb-5">
+                            <span class="icon"><i class="fas fa-user-tie"></i></span>
+                            De Ti Mest Brugte Vejledere
+                        </h2>
+                        <div class="columns is-multiline">
+                            <div v-for="(supervisor, index) in topSupervisors" :key="index" class="column is-6">
+                                <div class="box">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div>
+                                                <span class="rank-badge">#{{ index + 1 }}</span>
+                                                <span class="title is-5">{{ supervisor.name }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="has-text-centered">
+                                                <p class="heading">Studerende</p>
+                                                <p class="title is-3 has-text-primary">{{ supervisor.count }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-primary" :value="supervisor.count" :max="topSupervisors[0].count"></progress>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Longest Chains Tab -->
+                    <div v-else-if="activeTab === 'chains'" key="chains">
+                        <h2 class="title is-3 has-text-centered mb-5">
+                            <span class="icon"><i class="fas fa-link"></i></span>
+                            De Længste Vejleder-Kæder
+                        </h2>
+                        <div class="content has-text-centered mb-5">
+                            <p class="subtitle is-6">
+                                Akademiske stamtræer hvor PhD-studerende senere blev vejledere og vejledte nye PhD'er.
+                                Viser kontinuerlig vidensoverførsel gennem generationer af forskere.
+                            </p>
+                        </div>
+                        <div v-for="(chain, index) in longestChains" :key="index" class="box mb-4">
+                            <div class="level mb-3">
+                                <div class="level-left">
+                                    <span class="rank-badge">#{{ index + 1 }}</span>
+                                    <span class="chain-length-badge">{{ chain.path.length }} generationer</span>
+                                </div>
+                            </div>
+                            <div class="has-text-centered" style="overflow-x: auto; white-space: nowrap;">
+                                <template v-for="(person, i) in chain.path" :key="i">
+                                    <span class="chain-person">
+                                        {{ person }}
+                                        <span v-if="chain.years[i]" class="has-text-weight-light">
+                                            ({{ chain.years[i] }})
+                                        </span>
+                                    </span>
+                                    <span v-if="i < chain.path.length - 1" class="chain-arrow">→</span>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Most Descendants Tab -->
+                    <div v-else-if="activeTab === 'descendants'" key="descendants">
+                        <h2 class="title is-3 has-text-centered mb-5">
+                            <span class="icon"><i class="fas fa-sitemap"></i></span>
+                            Vejledere med Flest Efterkommere
+                        </h2>
+                        <div class="content has-text-centered mb-5">
+                            <p class="subtitle is-6">
+                                Akademiske familier - vejledere med det største samlede antal efterkommere gennem alle generationer.
+                                Inkluderer både direkte studerende og deres efterfølgende PhD-studerende.
+                            </p>
+                        </div>
+                        <div class="columns is-multiline">
+                            <div v-for="(supervisor, index) in topDescendants" :key="index" class="column is-12">
+                                <div class="box">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div>
+                                                <span class="rank-badge">#{{ index + 1 }}</span>
+                                                <span class="title is-4">{{ supervisor.name }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="has-text-centered">
+                                                <p class="heading">Efterkommere</p>
+                                                <p class="title is-2 has-text-primary">{{ supervisor.descendants }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="descendants-bar" :style="{width: (supervisor.descendants / topDescendants[0].descendants * 100) + '%'}"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </transition>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>PhD Rapport</strong> - Department of Computer Science, Aarhus University
+                    <br>
+                    Genereret: {{ generatedDate }}
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        
+        createApp({
+            data() {
+                return {
+                    activeTab: 'first',
+                    stats: {"total_phds": 373, "total_supervisors": 68, "year_span": "1975-2025"},
+                    firstPhds: [{"name": "Sven Skyum", "year": 1975, "title": "Parallelisme i definitioner af sprog", "supervisors": "Arto Salomaa"}, {"name": "Mogens Nielsen", "year": 1976, "title": "Some results on context-free Lindenmayer systems", "supervisors": "Arto Salomaa"}, {"name": "Kurt Jensen", "year": 1980, "title": "Net theory - adequacy and applications in language theory", "supervisors": "Erik Meineche Schmidt"}, {"name": "Ole Lehrmann", "year": 1980, "title": "Anvendelse af attribut-overs\u00e6ttelsesskemaer i realisation af sprogdefinitioner i alternative formalismer", "supervisors": "Peter Kornerup"}, {"name": "Leo Mark Christensen", "year": 1985, "title": "Self Describing Database Systems", "supervisors": "Brian H. Mayoh"}, {"name": "Gudmund Frandsen", "year": 1986, "title": "Semantik af logikprogrammering", "supervisors": "Mogens Nielsen"}, {"name": "J\u00f8rgen Lindskov Knudsen", "year": 1986, "title": "Underst\u00f8ttelse af undtagelsesh\u00e5ndtering i programmeringssprog", "supervisors": "Ole Lehrmann Madsen"}, {"name": "Andreas Munk-Madsen", "year": 1987, "title": "Vurdering af systemudviklingsprojekter", "supervisors": "Morten Kyng"}, {"name": "Kristine Stougaard Thomsen", "year": 1987, "title": "Underst\u00f8ttelse af nedarvning i programmeringssprog", "supervisors": "Ole Lehrmann Madsen"}, {"name": "Kurt N\u00f8rmark", "year": 1987, "title": "Transformationer og abstrakte pr\u00e6sentationer i en sprogudviklingsomgivelse", "supervisors": "Ole Lehrmann Madsen"}],
+                    topSupervisors: [{"name": "Ivan Bjerre Damg\u00e5rd", "count": 36}, {"name": "Kaj Gr\u00f8nb\u00e6k", "count": 26}, {"name": "Mogens Nielsen", "count": 18}, {"name": "Ole Lehrmann Madsen", "count": 17}, {"name": "Olivier Danvy", "count": 17}, {"name": "Susanne B\u00f8dker", "count": 15}, {"name": "Peter Bro Miltersen", "count": 15}, {"name": "Anders M\u00f8ller", "count": 14}, {"name": "Gerth St\u00f8lting Brodal", "count": 13}, {"name": "Lars Birkedal", "count": 13}],
+                    longestChains: [{"path": ["Arto Salomaa", "Sven Skyum", "Peter Bro Miltersen", "Kristoffer Arnsfelt Hansen", "Kasper H\u00f8gh"], "years": [null, 1975, 1993, 2006, 2023], "length": 5}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Marianne Graves", "Karl-Emil Kj\u00e6r Bilstrup"], "years": [null, 1987, 2003, 2023], "length": 4}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Marianne Graves", "Magnus H\u00f8holt Kaspersen"], "years": [null, 1987, 2003, 2023], "length": 4}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Clemens Nylandsted Klokmose", "Marcel Borowski"], "years": [null, 1987, 2009, 2022], "length": 4}, {"path": ["Morten Kyng", "Kaj Gr\u00f8nb\u00e6k", "Niels Olof Bouvin", "Morten Boh\u00f8j"], "years": [null, 1991, 2001, 2011], "length": 4}],
+                    topDescendants: [{"name": "Morten Kyng", "descendants": 54}, {"name": "Peter Landrock", "descendants": 52}, {"name": "Ivan Bjerre Damg\u00e5rd", "descendants": 51}, {"name": "Arto Salomaa", "descendants": 50}, {"name": "Erik Meineche Schmidt", "descendants": 45}, {"name": "Sven Skyum", "descendants": 29}, {"name": "Kaj Gr\u00f8nb\u00e6k", "descendants": 29}, {"name": "Ole Lehrmann Madsen", "descendants": 24}, {"name": "Michael I. Schwartzbach", "descendants": 22}, {"name": "Mogens Nielsen", "descendants": 19}],
+                    generatedDate: '16-08-2025 21:54'
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

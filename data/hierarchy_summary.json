@@ -1,0 +1,46 @@
+{
+  "total_roots": 41,
+  "active_roots": 41,
+  "largest_trees": [
+    {
+      "root": "Morten Kyng",
+      "descendants": 55
+    },
+    {
+      "root": "Peter Landrock",
+      "descendants": 53
+    },
+    {
+      "root": "Arto Salomaa",
+      "descendants": 50
+    },
+    {
+      "root": "Erik Meineche Schmidt",
+      "descendants": 46
+    },
+    {
+      "root": "Ole Lehrmann Madsen",
+      "descendants": 24
+    },
+    {
+      "root": "Michael I. Schwartzbach",
+      "descendants": 23
+    },
+    {
+      "root": "Olivier Danvy",
+      "descendants": 17
+    },
+    {
+      "root": "Lars Birkedal",
+      "descendants": 13
+    },
+    {
+      "root": "Glynn Winskel",
+      "descendants": 11
+    },
+    {
+      "root": "Ira Assent",
+      "descendants": 10
+    }
+  ]
+}

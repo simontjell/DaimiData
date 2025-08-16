@@ -1,0 +1,3359 @@
+[
+  {
+    "number": 1,
+    "name": "Sven Skyum",
+    "supervisors": "Arto Salomaa",
+    "date_raw": "19-03-1975",
+    "date": "1975-03-19",
+    "year": 1975,
+    "title": "Parallelisme i definitioner af sprog"
+  },
+  {
+    "number": 2,
+    "name": "Mogens Nielsen",
+    "supervisors": "Arto Salomaa",
+    "date_raw": "14-06-1976",
+    "date": "1976-06-14",
+    "year": 1976,
+    "title": "Some results on context-free Lindenmayer systems"
+  },
+  {
+    "number": 3,
+    "name": "Kurt Jensen",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "13-10-1980",
+    "date": "1980-10-13",
+    "year": 1980,
+    "title": "Net theory - adequacy and applications in language theory"
+  },
+  {
+    "number": 4,
+    "name": "Ole Lehrmann",
+    "supervisors": "Peter Kornerup",
+    "date_raw": "13-10-1980",
+    "date": "1980-10-13",
+    "year": 1980,
+    "title": "Anvendelse af attribut-oversættelsesskemaer i realisation af sprogdefinitioner i alternative formalismer"
+  },
+  {
+    "number": 5,
+    "name": "Leo Mark Christensen",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "24-06-1985",
+    "date": "1985-06-24",
+    "year": 1985,
+    "title": "Self Describing Database Systems"
+  },
+  {
+    "number": 6,
+    "name": "Gudmund Frandsen",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "18-08-1986",
+    "date": "1986-08-18",
+    "year": 1986,
+    "title": "Semantik af logikprogrammering"
+  },
+  {
+    "number": 7,
+    "name": "Jørgen Lindskov Knudsen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "15-12-1986",
+    "date": "1986-12-15",
+    "year": 1986,
+    "title": "Understøttelse af undtagelseshåndtering i programmeringssprog"
+  },
+  {
+    "number": 8,
+    "name": "Kristine Stougaard Thomsen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "07-09-1987",
+    "date": "1987-09-07",
+    "year": 1987,
+    "title": "Understøttelse af nedarvning i programmeringssprog"
+  },
+  {
+    "number": 9,
+    "name": "Kurt Nørmark",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "07-09-1987",
+    "date": "1987-09-07",
+    "year": 1987,
+    "title": "Transformationer og abstrakte præsentationer i en sprogudviklingsomgivelse"
+  },
+  {
+    "number": 10,
+    "name": "Andreas Munk-Madsen",
+    "supervisors": "Morten Kyng",
+    "date_raw": "12-10-1987",
+    "date": "1987-10-12",
+    "year": 1987,
+    "title": "Vurdering af systemudviklingsprojekter"
+  },
+  {
+    "number": 11,
+    "name": "Susanne Bødker",
+    "supervisors": "Morten Kyng",
+    "date_raw": "14-12-1987",
+    "date": "1987-12-14",
+    "year": 1987,
+    "title": "Brugergrænseflader - hvordan skal vi forstå dem og deres brug, og hvordan skal vi designe dem"
+  },
+  {
+    "number": 12,
+    "name": "Kim Halskov Madsen",
+    "supervisors": "Kurt Jensen",
+    "date_raw": "25-04-1988",
+    "date": "1988-04-25",
+    "year": 1988,
+    "title": "Sprogbrug og design"
+  },
+  {
+    "number": 13,
+    "name": "Ivan Bjerre Damgård",
+    "supervisors": "Peter Landrock",
+    "date_raw": "30-05-1988",
+    "date": "1988-05-30",
+    "year": 1988,
+    "title": "Ubetinget beskyttelse i kryptografiske protokoller"
+  },
+  {
+    "number": 14,
+    "name": "Pål Sørgaard",
+    "supervisors": "Morten Kyng",
+    "date_raw": "23-01-1989",
+    "date": "1989-01-23",
+    "year": 1989,
+    "title": "A framework for computer supported cooperative work, and its application to system development"
+  },
+  {
+    "number": 15,
+    "name": "Per Hasle",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "19-06-1989",
+    "date": "1989-06-19",
+    "year": 1989,
+    "title": "Logic grammar + computer science = natural language understanding"
+  },
+  {
+    "number": 16,
+    "name": "Uffe Henrik Engberg",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "19-03-1990",
+    "date": "1990-03-19",
+    "year": 1990,
+    "title": "Interleaving versus noninterleaving in the theory of concurrency"
+  },
+  {
+    "number": 17,
+    "name": "Kaj Grønbæk",
+    "supervisors": "Morten Kyng",
+    "date_raw": "09-09-1991",
+    "date": "1991-09-09",
+    "year": 1991,
+    "title": "Edb-baserede værktøjer - muligheder og begrænsninger for aktiv brugerdeltagelse"
+  },
+  {
+    "number": 18,
+    "name": "Torben Pryds Pedersen",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "10-02-1992",
+    "date": "1992-02-10",
+    "year": 1992,
+    "title": "Distributed Provers and Verifiable Secret Sharing Based on the Discrete Logarithm Problem"
+  },
+  {
+    "number": 19,
+    "name": "Jens Palsberg",
+    "supervisors": "Peter D. Mosses",
+    "date_raw": "24-08-1992",
+    "date": "1992-08-24",
+    "year": 1992,
+    "title": "Provably correct compiler generation"
+  },
+  {
+    "number": 20,
+    "name": "Madhavan Mukund",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "24-08-1992",
+    "date": "1992-08-24",
+    "year": 1992,
+    "title": "Models and logics in concurrency - achievements and major open problems"
+  },
+  {
+    "number": 21,
+    "name": "Anders Gammelgaard",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "21-09-1992",
+    "date": "1992-09-21",
+    "year": 1992,
+    "title": "From Bisimulation to Chunk-by-Chunk Simulation"
+  },
+  {
+    "number": 22,
+    "name": "Søren Christensen",
+    "supervisors": "Kurt Jensen",
+    "date_raw": "26-10-1992",
+    "date": "1992-10-26",
+    "year": 1992,
+    "title": "Farvede Petri Net: teori, værktøjer og praktisk anvendelse"
+  },
+  {
+    "number": 23,
+    "name": "Elmer Sørensen Sandvad",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "08-03-1993",
+    "date": "1993-03-08",
+    "year": 1993,
+    "title": "Værktøj til dokumenthåndtering i en programmeringsomgivelse"
+  },
+  {
+    "number": 24,
+    "name": "Kim Skak Larsen",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "08-03-1993",
+    "date": "1993-03-08",
+    "year": 1993,
+    "title": "High Level Efficiency in Database Languages"
+  },
+  {
+    "number": 25,
+    "name": "Henrik Reif Andersen",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "07-06-1993",
+    "date": "1993-06-07",
+    "year": 1993,
+    "title": "Verification of Temporal Properties in Concurrent Systems"
+  },
+  {
+    "number": 26,
+    "name": "Torben Amtoft",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "21-06-1993",
+    "date": "1993-06-21",
+    "year": 1993,
+    "title": "Sharing of Computations"
+  },
+  {
+    "number": 27,
+    "name": "Peter Bro Miltersen",
+    "supervisors": "Sven Skyum",
+    "date_raw": "28-06-1993",
+    "date": "1993-06-28",
+    "year": 1993,
+    "title": "Bitkompleksiteten af endelige datatyper"
+  },
+  {
+    "number": 28,
+    "name": "Jawahar Malhotra",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "01-03-1994",
+    "date": "1994-03-01",
+    "year": 1994,
+    "title": "Techniques and tools for building tailorable systems using strongly typed object-oriented languages"
+  },
+  {
+    "number": 29,
+    "name": "Lars Ramkilde Knudsen",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "24-10-1994",
+    "date": "1994-10-24",
+    "year": 1994,
+    "title": "Block ciphers - analysis, design and applications"
+  },
+  {
+    "number": 30,
+    "name": "Henrik Esbensen",
+    "supervisors": "Peter Møller-Nielsen",
+    "date_raw": "24-10-1994",
+    "date": "1994-10-24",
+    "year": 1994,
+    "title": "Genetic algorithms for global routing of VLSI macro-cell layout"
+  },
+  {
+    "number": 31,
+    "name": "Preben Holst Mogensen",
+    "supervisors": "Morten Kyng",
+    "date_raw": "24-10-1994",
+    "date": "1994-10-24",
+    "year": 1994,
+    "title": "Challenging practice - an approach to cooperative analysis"
+  },
+  {
+    "number": 32,
+    "name": "Sten Agerholm",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "20-02-1995",
+    "date": "1995-02-20",
+    "year": 1995,
+    "title": "Prioritized and independent actions in distributed computer systems"
+  },
+  {
+    "number": 33,
+    "name": "Martin Møller",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "20-12-1994",
+    "date": "1994-12-20",
+    "year": 1994,
+    "title": "Efficient training of feed-forward neural Networks"
+  },
+  {
+    "number": 34,
+    "name": "Claus Torp Jensen",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "20-02-1995",
+    "date": "1995-02-20",
+    "year": 1995,
+    "title": "Prioritized and independent actions in distributed computer systems"
+  },
+  {
+    "number": 35,
+    "name": "Jan Depenau",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "18-10-1995",
+    "date": "1995-10-18",
+    "year": 1995,
+    "title": "Automated Design of neural network architectures for classification"
+  },
+  {
+    "number": 36,
+    "name": "Holger Orup",
+    "supervisors": "Peter Møller-Nielsen",
+    "date_raw": "27-11-1995",
+    "date": "1995-11-27",
+    "year": 1995,
+    "title": "Fast VLSI implementation of modular exponentiation"
+  },
+  {
+    "number": 37,
+    "name": "Urban Engberg",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "05-01-1996",
+    "date": "1996-01-05",
+    "year": 1996,
+    "title": "Reasoning in the temporal logic of actions"
+  },
+  {
+    "number": 38,
+    "name": "Allan Cheng",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "24-05-1996",
+    "date": "1996-05-24",
+    "year": 1996,
+    "title": "Reasoning about concurrency"
+  },
+  {
+    "number": 39,
+    "name": "Lars Arge",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "07-06-1996",
+    "date": "1996-06-07",
+    "year": 1996,
+    "title": "Efficient external memory data structures and applications"
+  },
+  {
+    "number": 40,
+    "name": "Ole Villumsen",
+    "supervisors": "Morten Kyng",
+    "date_raw": "26-09-1996",
+    "date": "1996-09-26",
+    "year": 1996,
+    "title": "Tools for stored interactive multimedia"
+  },
+  {
+    "number": 41,
+    "name": "Torben Braüner",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "08-11-1996",
+    "date": "1996-11-08",
+    "year": 1996,
+    "title": "An Axiomatic Approach to Adequacy"
+  },
+  {
+    "number": 42,
+    "name": "Peter Øbæk",
+    "supervisors": "Peter D. Mosses",
+    "date_raw": "14-03-1997",
+    "date": "1997-03-14",
+    "year": 1997,
+    "title": "Trust and Dependence Analysis"
+  },
+  {
+    "number": 43,
+    "name": "Alexandre Valente Da Conceicao Sousa",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "20-03-1997",
+    "date": "1997-03-20",
+    "year": 1997,
+    "title": "Engineering a Reliable Object Storage System"
+  },
+  {
+    "number": 44,
+    "name": "Gerth Stølting Brodal",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "18-04-1997",
+    "date": "1997-04-18",
+    "year": 1997,
+    "title": "Worst Case Efficient Data Structures"
+  },
+  {
+    "number": 45,
+    "name": "Thore Husfeldt",
+    "supervisors": "Sven Skyum",
+    "date_raw": "02-05-1997",
+    "date": "1997-05-02",
+    "year": 1997,
+    "title": "Dynamic Computation"
+  },
+  {
+    "number": 46,
+    "name": "Søren Brandt",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "14-05-1997",
+    "date": "1997-05-14",
+    "year": 1997,
+    "title": "Towards Orthogonal Persistence as a Basic Technology"
+  },
+  {
+    "number": 47,
+    "name": "Jens Bæk Jørgensen",
+    "supervisors": "Kurt Jensen",
+    "date_raw": "15-05-1997",
+    "date": "1997-05-15",
+    "year": 1997,
+    "title": "Analysing Coloured Petri Nets by the Occurrence Graph Method"
+  },
+  {
+    "number": 48,
+    "name": "Kjeld Høyer Mortensen",
+    "supervisors": "Kurt Jensen",
+    "date_raw": "15-05-1997",
+    "date": "1997-05-15",
+    "year": 1997,
+    "title": "Coloured Petri Nets - A Pragmatic Formal Method for Designing and Analysing Distributed Systems"
+  },
+  {
+    "number": 49,
+    "name": "Søren Lassen",
+    "supervisors": "Peter D. Mosses",
+    "date_raw": "12-12-1997",
+    "date": "1997-12-12",
+    "year": 1997,
+    "title": "Relational Reasoning about Functions and Nondeterminism"
+  },
+  {
+    "number": 50,
+    "name": "Ole Ildsgaard Hougaard",
+    "supervisors": "Michael I. Schwartzbach",
+    "date_raw": "20-05-1998",
+    "date": "1998-05-20",
+    "year": 1998,
+    "title": "Tractable Type Inference made Easy"
+  },
+  {
+    "number": 51,
+    "name": "Kim Sunesen",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "11-06-1998",
+    "date": "1998-06-11",
+    "year": 1998,
+    "title": "Reasoning about Reactive Systems"
+  },
+  {
+    "number": 52,
+    "name": "Jakob Eyvind Bardram",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "29-10-1998",
+    "date": "1998-10-29",
+    "year": 1998,
+    "title": "An Activity Theoretical Approach to the Design of Computer Supported Cooperative Work"
+  },
+  {
+    "number": 53,
+    "name": "Rasmus Munk Larsen",
+    "supervisors": "Jørgen Christensen-Dalsgaard",
+    "date_raw": "03-12-1998",
+    "date": "1998-12-03",
+    "year": 1998,
+    "title": "Efficient Algorithms for Helioseismic Inversion"
+  },
+  {
+    "number": 54,
+    "name": "Gian Luca Cattani",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "08-02-1999",
+    "date": "1999-02-08",
+    "year": 1999,
+    "title": "Presheaf Models for Concurrency"
+  },
+  {
+    "number": 55,
+    "name": "Henrik Bærbak Christensen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "10-06-1999",
+    "date": "1999-06-10",
+    "year": 1999,
+    "title": "RAGNAROK: An architecture Based Software Development Environment"
+  },
+  {
+    "number": 56,
+    "name": "Erik Ernst",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "12-10-1999",
+    "date": "1999-10-12",
+    "year": 1999,
+    "title": "gbeta - A Language with Virtual Attributes, Block Structure, and Propagating, Dynamic Inheritance"
+  },
+  {
+    "number": 57,
+    "name": "Thomas Troels Hildebrandt",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "16-11-1999",
+    "date": "1999-11-16",
+    "year": 1999,
+    "title": "Categorical Models for Concurrency: Independence, Fairness and Dataflow"
+  },
+  {
+    "number": 58,
+    "name": "Anders Thorhauge Sandholm",
+    "supervisors": "Michael I. Schwartzbach",
+    "date_raw": "18-02-2000",
+    "date": "2000-02-18",
+    "year": 2000,
+    "title": "Programming Languages: Design, Analysis, and Semantics"
+  },
+  {
+    "number": 59,
+    "name": "Theis Rauhe",
+    "supervisors": "Sven Skyum",
+    "date_raw": "06-03-2000",
+    "date": "2000-03-06",
+    "year": 2000,
+    "title": "Complexity of Data Structures"
+  },
+  {
+    "number": 60,
+    "name": "Rune Bang Lyngsø",
+    "supervisors": "Ole Caprani",
+    "date_raw": "09-03-2000",
+    "date": "2000-03-09",
+    "year": 2000,
+    "title": "Computational Biology"
+  },
+  {
+    "number": 61,
+    "name": "Christian N. Storm Pedersen",
+    "supervisors": "Sven Skyum",
+    "date_raw": "09-03-2000",
+    "date": "2000-03-09",
+    "year": 2000,
+    "title": "Algorithms in Computational Biology"
+  },
+  {
+    "number": 62,
+    "name": "Lars Michael Kristensen",
+    "supervisors": "Kurt Jensen",
+    "date_raw": "29-03-2000",
+    "date": "2000-03-29",
+    "year": 2000,
+    "title": "State Space Methods for Coloured Petri Nets"
+  },
+  {
+    "number": 63,
+    "name": "Jakob Vogdrup Hansen",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "18-04-2000",
+    "date": "2000-04-18",
+    "year": 2000,
+    "title": "Combining Predictors - Meta Machine Learning Methods and Bias/Variance & Ambiguity Decompositions"
+  },
+  {
+    "number": 64,
+    "name": "Jesper Gulmann Henriksen",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "26-05-2000",
+    "date": "2000-05-26",
+    "year": 2000,
+    "title": "Logics and Automata for Verification: Expressiveness and Decidability Issues"
+  },
+  {
+    "number": 65,
+    "name": "Kresten Krab Thorup",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "10-11-2000",
+    "date": "2000-11-10",
+    "year": 2000,
+    "title": "Discourse on Genericity in Object-Oriented Programming Languages"
+  },
+  {
+    "number": 66,
+    "name": "Marcin Jurdzinski",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "18-12-2000",
+    "date": "2000-12-18",
+    "year": 2000,
+    "title": "Games for Verification: Algorithmic Issues"
+  },
+  {
+    "number": 67,
+    "name": "Stefan Dziembowski",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "19-01-2001",
+    "date": "2001-01-19",
+    "year": 2001,
+    "title": "Multiparty Computations - Information-Theoretically Secure against an Adaptive Adversary"
+  },
+  {
+    "number": 68,
+    "name": "Niels Olof Bouvin",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "26-02-2001",
+    "date": "2001-02-26",
+    "year": 2001,
+    "title": "Augmenting the Web through Open Hypermedia - The Development of the Arakne Environment, a Collaborative Open Hypermedia System for Web Augmentation"
+  },
+  {
+    "number": 69,
+    "name": "Jakob Pagter",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "27-03-2001",
+    "date": "2001-03-27",
+    "year": 2001,
+    "title": "Time-Space Trade Offs"
+  },
+  {
+    "number": 70,
+    "name": "Thomas Seidelin Hune",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "27-03-2001",
+    "date": "2001-03-27",
+    "year": 2001,
+    "title": "Analyzing Real-Time Systems: Theory and Tools"
+  },
+  {
+    "number": 71,
+    "name": "Daniel Damian",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "18-05-2001",
+    "date": "2001-05-18",
+    "year": 2001,
+    "title": "On Static and Dynamic Control-Flow Information in Program Analysis and Transformation"
+  },
+  {
+    "number": 72,
+    "name": "Morten Rhiger",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "17-08-2001",
+    "date": "2001-08-17",
+    "year": 2001,
+    "title": "Higher-Order Program Generation"
+  },
+  {
+    "number": 73,
+    "name": "Bernd Grobauer",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "31-08-2001",
+    "date": "2001-08-31",
+    "year": 2001,
+    "title": "Topics in Semantics-based Program Manipulation"
+  },
+  {
+    "number": 74,
+    "name": "Lasse Reichstein Nielsen",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "31-08-2001",
+    "date": "2001-08-31",
+    "year": 2001,
+    "title": "A Study of Defunctionalization and Continuation-Passing Style"
+  },
+  {
+    "number": 75,
+    "name": "Mads Torgersen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "14-09-2001",
+    "date": "2001-09-14",
+    "year": 2001,
+    "title": "Unifying Abstractions"
+  },
+  {
+    "number": 76,
+    "name": "Niels Damgaard",
+    "supervisors": "Michael I. Schwartzbach",
+    "date_raw": "01-10-2001",
+    "date": "2001-10-01",
+    "year": 2001,
+    "title": "Using Theory to Make Better Tools"
+  },
+  {
+    "number": 77,
+    "name": "Aino Cornils",
+    "supervisors": "Jørgen Lindskov Knudsen",
+    "date_raw": "01-11-2001",
+    "date": "2001-11-01",
+    "year": 2001,
+    "title": "Patterns in Software Development"
+  },
+  {
+    "number": 78,
+    "name": "Flemming Friche Rodler",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "16-11-2001",
+    "date": "2001-11-16",
+    "year": 2001,
+    "title": "Compression With Fast Random Access"
+  },
+  {
+    "number": 79,
+    "name": "Mikkel Thomas Jensen",
+    "supervisors": "Brian H. Mayoh",
+    "date_raw": "23-11-2001",
+    "date": "2001-11-23",
+    "year": 2001,
+    "title": "Robust and Flexible Scheduling with Evolutionary Computation"
+  },
+  {
+    "number": 80,
+    "name": "Ann Christina Nielsen",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "18-01-2002",
+    "date": "2002-01-18",
+    "year": 2002,
+    "title": "Designing to support Mobile Work with Mobile Devices"
+  },
+  {
+    "number": 81,
+    "name": "M. Oliver Möller",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "19-04-2002",
+    "date": "2002-04-19",
+    "year": 2002,
+    "title": "Structure and Hierarchy in Real-Time Systems"
+  },
+  {
+    "number": 82,
+    "name": "Stefan Stoyanov Dantchev",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "10-05-2002",
+    "date": "2002-05-10",
+    "year": 2002,
+    "title": "On Resolution Complexity of Matching Principles"
+  },
+  {
+    "number": 83,
+    "name": "Klaus Marius Hansen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "31-05-2002",
+    "date": "2002-05-31",
+    "year": 2002,
+    "title": "Experimental Object-Oriented Modelling"
+  },
+  {
+    "number": 84,
+    "name": "Riko Jakob",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "31-05-2002",
+    "date": "2002-05-31",
+    "year": 2002,
+    "title": "Dynamic Planar Convex Hull"
+  },
+  {
+    "number": 85,
+    "name": "Jakob Fredslund",
+    "supervisors": "Ole Caprani",
+    "date_raw": "19-06-2002",
+    "date": "2002-06-19",
+    "year": 2002,
+    "title": "Simplicity Applied in Projects Involving Embodied, Autonomous Robots"
+  },
+  {
+    "number": 86,
+    "name": "Lisa Marie Wells",
+    "supervisors": "Søren Christensen",
+    "date_raw": "28-08-2002",
+    "date": "2002-08-28",
+    "year": 2002,
+    "title": "Performance Analysis Using Coloured Petri Nets"
+  },
+  {
+    "number": 87,
+    "name": "Bo Lindstrøm",
+    "supervisors": "Søren Christensen",
+    "date_raw": "29-08-2002",
+    "date": "2002-08-29",
+    "year": 2002,
+    "title": "Facilitating the Practical Use of Coloured Petri Nets"
+  },
+  {
+    "number": 88,
+    "name": "Louise Elgaard",
+    "supervisors": "Søren Christensen",
+    "date_raw": "30-08-2002",
+    "date": "2002-08-30",
+    "year": 2002,
+    "title": "The Symmetry Method for Coloured Petri Nets"
+  },
+  {
+    "number": 89,
+    "name": "Anders Møller",
+    "supervisors": "Michael I. Schwartzbach",
+    "date_raw": "30-09-2002",
+    "date": "2002-09-30",
+    "year": 2002,
+    "title": "Program Verification with Monadic Second-Order Logic & Languages for Web Service Development"
+  },
+  {
+    "number": 90,
+    "name": "Rasmus Pagh",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "11-10-2002",
+    "date": "2002-10-11",
+    "year": 2002,
+    "title": "Hashing, Randomness and Dictionaries"
+  },
+  {
+    "number": 91,
+    "name": "Michael Thomsen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "29-10-2002",
+    "date": "2002-10-29",
+    "year": 2002,
+    "title": "Malleable Software Development - Supporting Collaboration and Iteration in Object-Oriented Software Development"
+  },
+  {
+    "number": 92,
+    "name": "Claus Rasmussen Brabrand",
+    "supervisors": "Michael I. Schwartzbach",
+    "date_raw": "24-01-2003",
+    "date": "2003-01-24",
+    "year": 2003,
+    "title": "Domain Specific Languages for Interactive Web Services"
+  },
+  {
+    "number": 93,
+    "name": "Marianne Graves",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "29-01-2003",
+    "date": "2003-01-29",
+    "year": 2003,
+    "title": "Designing for Learning in Use of Everyday Artefacts"
+  },
+  {
+    "number": 94,
+    "name": "Frank Valencia",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "05-02-2003",
+    "date": "2003-02-05",
+    "year": 2003,
+    "title": "Temporal Concurrent Constraint Programming"
+  },
+  {
+    "number": 95,
+    "name": "Christian Heide Damm",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "19-03-2003",
+    "date": "2003-03-19",
+    "year": 2003,
+    "title": "Collaborative Software Development - Design and Implementation of Tools for Object-Oriented Modelling"
+  },
+  {
+    "number": 96,
+    "name": "Jiri Srba",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "14-04-2003",
+    "date": "2003-04-14",
+    "year": 2003,
+    "title": "Decidability and Complexity Issues for Infinite-State Processes"
+  },
+  {
+    "number": 97,
+    "name": "Thomas Mailund Jensen",
+    "supervisors": "Søren Christensen",
+    "date_raw": "28-04-2003",
+    "date": "2003-04-28",
+    "year": 2003,
+    "title": "Sweeping the State Space - A Sweep-Line State Space Exploration Method"
+  },
+  {
+    "number": 98,
+    "name": "Federico Crazzolara",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "15-05-2003",
+    "date": "2003-05-15",
+    "year": 2003,
+    "title": "Language, Semantics, and Methods for Security Protocols"
+  },
+  {
+    "number": 99,
+    "name": "Giuseppe Milicia",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "16-06-2003",
+    "date": "2003-06-16",
+    "year": 2003,
+    "title": "Applying Formal Methods to Programming Language Design and Implementation"
+  },
+  {
+    "number": 100,
+    "name": "Rasmus Kjær Ursem",
+    "supervisors": "Thiemo Krink",
+    "date_raw": "20-06-2003",
+    "date": "2003-06-20",
+    "year": 2003,
+    "title": "Models for Evolutionary Algorithms and Their Applications in System Identification and Control Optimization"
+  },
+  {
+    "number": 101,
+    "name": "Mario Jose Caccamo",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "23-06-2003",
+    "date": "2003-06-23",
+    "year": 2003,
+    "title": "A Formal Calculus for Categories"
+  },
+  {
+    "number": 102,
+    "name": "Jesper Buus Nielsen",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "07-08-2003",
+    "date": "2003-08-07",
+    "year": 2003,
+    "title": "On Protocol Security in the Cryptographic Model"
+  },
+  {
+    "number": 103,
+    "name": "Mads Johan Jurik",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "07-08-2003",
+    "date": "2003-08-07",
+    "year": 2003,
+    "title": "Extensions to the Paillier Cryptosystem with Applications to Cryptological Protocols"
+  },
+  {
+    "number": 104,
+    "name": "Maciej Koprowski",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "08-08-2003",
+    "date": "2003-08-08",
+    "year": 2003,
+    "title": "Cryptographic Protocols Based on Root Extracting"
+  },
+  {
+    "number": 105,
+    "name": "Serge Fehr",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "08-08-2003",
+    "date": "2003-08-08",
+    "year": 2003,
+    "title": "Secure Multi-Player Protocols: Fundamentals, Generality, and Efficiency"
+  },
+  {
+    "number": 106,
+    "name": "Paulo Borges Oliva",
+    "supervisors": "Ulrich Kohlenbach",
+    "date_raw": "26-09-2003",
+    "date": "2003-09-26",
+    "year": 2003,
+    "title": "Proof Mining in Subsystems of Analysis"
+  },
+  {
+    "number": 107,
+    "name": "Mikkel Nygaard",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "21-11-2003",
+    "date": "2003-11-21",
+    "year": 2003,
+    "title": "Domain Theory for Concurrency"
+  },
+  {
+    "number": 108,
+    "name": "Daniele Varacca",
+    "supervisors": "Glynn Winskel",
+    "date_raw": "24-11-2003",
+    "date": "2003-11-24",
+    "year": 2003,
+    "title": "Probability, Nondeterminism and Concurrence: Two Denotational Models for Probabilistic Computation"
+  },
+  {
+    "number": 109,
+    "name": "Bartosz Klin",
+    "supervisors": "Peter D. Mosses",
+    "date_raw": "28-11-2003",
+    "date": "2003-11-28",
+    "year": 2003,
+    "title": "An Abstract Coalgebraic Approach to Process Equivalence for Well-Behaved Operational Semantics"
+  },
+  {
+    "number": 110,
+    "name": "René Thomsen",
+    "supervisors": "Thiemo Krink",
+    "date_raw": "31-05-2004",
+    "date": "2004-05-31",
+    "year": 2004,
+    "title": "Evolutionary Algorithms and their Application in Bioinformatics"
+  },
+  {
+    "number": 111,
+    "name": "Alex Rune Berg",
+    "supervisors": "Erik Meineche Schmidt",
+    "date_raw": "07-07-2004",
+    "date": "2004-07-07",
+    "year": 2004,
+    "title": "Rigidity of frameworks and connectivity of graphs"
+  },
+  {
+    "number": 112,
+    "name": "Jannie Friis Kristensen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "08-10-2004",
+    "date": "2004-10-08",
+    "year": 2004,
+    "title": "Interaction through Negotiation - Interaction design in a pervasive computing perspective"
+  },
+  {
+    "number": 113,
+    "name": "Jens Groth",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "15-10-2004",
+    "date": "2004-10-15",
+    "year": 2004,
+    "title": "Honest Verifier Zero-knowledge Arguments applied"
+  },
+  {
+    "number": 114,
+    "name": "Jesper Makholm Byskov",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "11-11-2004",
+    "date": "2004-11-11",
+    "year": 2004,
+    "title": "Exact Algorithms for Graph Colouring and Exact Satisfiability"
+  },
+  {
+    "number": 115,
+    "name": "Bjarke Skjernaa",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "26-11-2004",
+    "date": "2004-11-26",
+    "year": 2004,
+    "title": "Exact Algorithms for Variants of Satisfiability and Colouring Problems"
+  },
+  {
+    "number": 116,
+    "name": "Pawel Sobocinski",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "03-12-2004",
+    "date": "2004-12-03",
+    "year": 2004,
+    "title": "Deriving process congruences from reaction rules"
+  },
+  {
+    "number": 117,
+    "name": "Esben Skovenborg",
+    "supervisors": "Ole Caprani",
+    "date_raw": "10-02-2005",
+    "date": "2005-02-10",
+    "year": 2005,
+    "title": "Perceptual Features of Music and Speech - Measured by Listening Experiments, and Computer Modelled from Signal Analysis"
+  },
+  {
+    "number": 118,
+    "name": "Kirill Morozov",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "11-03-2005",
+    "date": "2005-03-11",
+    "year": 2005,
+    "title": "On Cryptographic Primitives Based on Noisy Channels"
+  },
+  {
+    "number": 119,
+    "name": "Jørgen Iversen",
+    "supervisors": "Mogens Nielsen, Peter Mosses",
+    "date_raw": "12-05-2005",
+    "date": "2005-05-12",
+    "year": 2005,
+    "title": "Formalisms and tools supporting Constructive Action Semantics"
+  },
+  {
+    "number": 120,
+    "name": "Marco Carbone",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "30-06-2005",
+    "date": "2005-06-30",
+    "year": 2005,
+    "title": "Trust and Mobility"
+  },
+  {
+    "number": 121,
+    "name": "Bolette Ammitzbøll Madsen",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "09-09-2005",
+    "date": "2005-09-09",
+    "year": 2005,
+    "title": "Exact Algorithms and Exact Satisfiability"
+  },
+  {
+    "number": 122,
+    "name": "Jesus Fernando Almansa Guerra",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "12-09-2005",
+    "date": "2005-09-12",
+    "year": 2005,
+    "title": "A Study for Cryptologic Protocols"
+  },
+  {
+    "number": 123,
+    "name": "Saurabh Agarwal",
+    "supervisors": "Gudmund Frandsen",
+    "date_raw": "28-10-2005",
+    "date": "2005-10-28",
+    "year": 2005,
+    "title": "GCD Algorithms for Quadratic Number Rings"
+  },
+  {
+    "number": 124,
+    "name": "Kasper Dupont",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "12-12-2005",
+    "date": "2005-12-12",
+    "year": 2005,
+    "title": "Disk Encryption, Group Identification, Byzantine Agreement, and Threshold RSA"
+  },
+  {
+    "number": 125,
+    "name": "Dariusz Piotr Biernacki",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "15-12-2005",
+    "date": "2005-12-15",
+    "year": 2005,
+    "title": "The Theory and Practice of Programming Languages with Delimited Continuations"
+  },
+  {
+    "number": 126,
+    "name": "Henning Korsholm Rohde",
+    "supervisors": "Olivier Danvy, Andrzej Filinski",
+    "date_raw": "19-12-2005",
+    "date": "2005-12-19",
+    "year": 2005,
+    "title": "Formal Aspects of Partial Evaluation"
+  },
+  {
+    "number": 127,
+    "name": "Thomas Brochmann Pedersen",
+    "supervisors": "Louis Salvail",
+    "date_raw": "23-01-2006",
+    "date": "2006-01-23",
+    "year": 2006,
+    "title": "Quantum Encryption Minimising Key Leakage unider Known Plaintext Attacks"
+  },
+  {
+    "number": 128,
+    "name": "Malgorzata Biernacka",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "27-01-2006",
+    "date": "2006-01-27",
+    "year": 2006,
+    "title": "A Derivational Approach to the Operational Semantics of Functional Languages"
+  },
+  {
+    "number": 129,
+    "name": "Mads Sig Ager",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "30-01-2006",
+    "date": "2006-01-30",
+    "year": 2006,
+    "title": "Partial Evaluation of String Matchers & Constructions of Abstract Machines"
+  },
+  {
+    "number": 130,
+    "name": "Ole Sejer Iversen",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "20-02-2006",
+    "date": "2006-02-20",
+    "year": 2006,
+    "title": "Participatory Design Beyond Work Practices - Designing with Children"
+  },
+  {
+    "number": 131,
+    "name": "Jakob Svaneborg Vesterstrøm",
+    "supervisors": "Christian Nørgaard Storm Pedersen",
+    "date_raw": "10-03-2006",
+    "date": "2006-03-10",
+    "year": 2006,
+    "title": "Heurestic Algorithms in Bioinformatics"
+  },
+  {
+    "number": 132,
+    "name": "Branimir Lambov",
+    "supervisors": "Ulrich Kohlenbach",
+    "date_raw": "31-03-2006",
+    "date": "2006-03-31",
+    "year": 2006,
+    "title": "Topics in the Theory and Practice of Computable Analysis"
+  },
+  {
+    "number": 133,
+    "name": "Aske Simon Christensen",
+    "supervisors": "Michael I. Schwartzbach",
+    "date_raw": "04-05-2006",
+    "date": "2006-05-04",
+    "year": 2006,
+    "title": "Something to do with Java"
+  },
+  {
+    "number": 134,
+    "name": "Philipp Gerhardy",
+    "supervisors": "Ulrich Kohlenbach",
+    "date_raw": "29-05-2006",
+    "date": "2006-05-29",
+    "year": 2006,
+    "title": "Applications of Proof Interpretations"
+  },
+  {
+    "number": 135,
+    "name": "Jonas Martin Thomsen",
+    "supervisors": "Søren Christensen",
+    "date_raw": "08-06-2006",
+    "date": "2006-06-08",
+    "year": 2006,
+    "title": "Home Appliance Integration by Pervasive Computing"
+  },
+  {
+    "number": 136,
+    "name": "Christian Kirkegaard",
+    "supervisors": "Michael I. Schwartzbach, Anders Møller",
+    "date_raw": "04-10-2006",
+    "date": "2006-10-04",
+    "year": 2006,
+    "title": "Programming with XML"
+  },
+  {
+    "number": 137,
+    "name": "Simon Bo Larsen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "12-10-2006",
+    "date": "2006-10-12",
+    "year": 2006,
+    "title": "Pervasive Home Care - Technological support for treatment of diabetic foot ulcers at home"
+  },
+  {
+    "number": 138,
+    "name": "Jesper Mosegaard",
+    "supervisors": "Peter Møller-Nielsen",
+    "date_raw": "03-11-2006",
+    "date": "2006-11-03",
+    "year": 2006,
+    "title": "Cardiac Surgery Simulation"
+  },
+  {
+    "number": 139,
+    "name": "Kristoffer Arnsfelt Hansen",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "13-11-2006",
+    "date": "2006-11-13",
+    "year": 2006,
+    "title": "Constant Width and Constant Depth Computation"
+  },
+  {
+    "number": 140,
+    "name": "Karl Kristian Krukow",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "17-11-2006",
+    "date": "2006-11-17",
+    "year": 2006,
+    "title": "Towards a Theory of Trust for the Global Ubiquitous Computer"
+  },
+  {
+    "number": 141,
+    "name": "Frank Allan Hansen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "01-12-2006",
+    "date": "2006-12-01",
+    "year": 2006,
+    "title": "Context-aware Mobile Hypermedia: Concepts, Framework, and Applications"
+  },
+  {
+    "number": 142,
+    "name": "Michael Bang Nielsen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "05-12-2006",
+    "date": "2006-12-05",
+    "year": 2006,
+    "title": "Efficient and High Resolution Level Set Simulations - Data Structures, Algorithms and Applications"
+  },
+  {
+    "number": 143,
+    "name": "Mads Ingstrup",
+    "supervisors": "Morten Kyng",
+    "date_raw": "15-12-2006",
+    "date": "2006-12-15",
+    "year": 2006,
+    "title": "Towards Distributed Declarative Architectural Reflection"
+  },
+  {
+    "number": 144,
+    "name": "Thomas Riisgaard Hansen",
+    "supervisors": "Jakob Bardram",
+    "date_raw": "18-12-2006",
+    "date": "2006-12-18",
+    "year": 2006,
+    "title": "Pervasive Interaction - Designing interactive pervasive systems for complex work environments"
+  },
+  {
+    "number": 145,
+    "name": "Jooyong Lee",
+    "supervisors": "Mogens Nielsen, Olivier Danvy",
+    "date_raw": "26-02-2007",
+    "date": "2007-02-26",
+    "year": 2007,
+    "title": "Program Validation by Symbolic and Reverse Execution"
+  },
+  {
+    "number": 146,
+    "name": "Christian Schaffner",
+    "supervisors": "Louis Salvail",
+    "date_raw": "27-04-2007",
+    "date": "2007-04-27",
+    "year": 2007,
+    "title": "Cryptography in the Bounded-Quantum-Storage Model"
+  },
+  {
+    "number": 147,
+    "name": "Kevin Millikin",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "01-05-2007",
+    "date": "2007-05-01",
+    "year": 2007,
+    "title": "A Structured Approach to the Transformation, Nomalization and Execution of Computer Programs"
+  },
+  {
+    "number": 148,
+    "name": "Michael Edelgaard Caspersen",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "31-05-2007",
+    "date": "2007-05-31",
+    "year": 2007,
+    "title": "Educating Novices in the Skills of Programming"
+  },
+  {
+    "number": 149,
+    "name": "Jan Midtgaard",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "20-06-2007",
+    "date": "2007-06-20",
+    "year": 2007,
+    "title": "Transformation, Analysis, and Interpretation of Higher-Order Procedural Programs"
+  },
+  {
+    "number": 150,
+    "name": "Anders Torp Brodersen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "27-06-2007",
+    "date": "2007-06-27",
+    "year": 2007,
+    "title": "Flexible Methods for Geometric Texturing - From Terrain Visualization to Geometric Texture Mapping"
+  },
+  {
+    "number": 151,
+    "name": "Tomas Toft",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "06-07-2007",
+    "date": "2007-07-06",
+    "year": 2007,
+    "title": "Primitives and Applications for Multi-party Computation"
+  },
+  {
+    "number": 152,
+    "name": "Gabriel Moruz",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "25-08-2007",
+    "date": "2007-08-25",
+    "year": 2007,
+    "title": "Hardware-Aware Algorithms and Data Structures"
+  },
+  {
+    "number": 153,
+    "name": "Johan Nilsson",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "15-10-2007",
+    "date": "2007-10-15",
+    "year": 2007,
+    "title": "Combinatorial algorithms for partially ordered sets"
+  },
+  {
+    "number": 154,
+    "name": "Michael Westergaard",
+    "supervisors": "Kurt Jensen",
+    "date_raw": "23-10-2007",
+    "date": "2007-10-23",
+    "year": 2007,
+    "title": "Looking Good, Behaving Well - Behavioural Verification and Visualisation of Formal Models of Concurrent Systems"
+  },
+  {
+    "number": 155,
+    "name": "Kristian Støvring Sørensen",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "24-10-2007",
+    "date": "2007-10-24",
+    "year": 2007,
+    "title": "On Reasoning Equationally: Lambda Calculi and Programs with Computational Effects"
+  },
+  {
+    "number": 156,
+    "name": "Kari Rye Schougaard Nørgaard",
+    "supervisors": "Ole Lehrmann Madsen",
+    "date_raw": "12-12-2007",
+    "date": "2007-12-12",
+    "year": 2007,
+    "title": "Programming with Location from Conceptualization to Language Design"
+  },
+  {
+    "number": 157,
+    "name": "Troels Bjerre Sørensen",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "10-03-2008",
+    "date": "2008-03-10",
+    "year": 2008,
+    "title": "Computing Equilibria of Two Player Games"
+  },
+  {
+    "number": 158,
+    "name": "Bent Otto Guldbjerg Christensen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "11-03-2008",
+    "date": "2008-03-11",
+    "year": 2008,
+    "title": "Mobile P2P in Ad Hoc Networks: Framework and Applications"
+  },
+  {
+    "number": 159,
+    "name": "Martin Brynskov",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "31-03-2008",
+    "date": "2008-03-31",
+    "year": 2008,
+    "title": "Tools for Social Construction: A Framework for Pervasive Media for Children"
+  },
+  {
+    "number": 160,
+    "name": "Michael Østergaard Pedersen",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "30-05-2008",
+    "date": "2008-05-30",
+    "year": 2008,
+    "title": "Authentication and Privacy with Application to Pervasive Computing"
+  },
+  {
+    "number": 161,
+    "name": "Mikkel Baun Kjærgaard",
+    "supervisors": "Klaus Marius Hansen",
+    "date_raw": "08-09-2008",
+    "date": "2008-09-08",
+    "year": 2008,
+    "title": "Indoor Positioning with Radio Location Fingerprinting"
+  },
+  {
+    "number": 162,
+    "name": "Jeppe Rørbæk Brønsted",
+    "supervisors": "Klaus Marius Hansen",
+    "date_raw": "12-09-2008",
+    "date": "2008-09-12",
+    "year": 2008,
+    "title": "Vehicle to Vehicle Services. Service oriented architecture for pervasive computing systems with emphasis on vehicle to vehicle applications"
+  },
+  {
+    "number": 163,
+    "name": "Kristian Bisgaard Lassen",
+    "supervisors": "Søren Christensen",
+    "date_raw": "21-10-2008",
+    "date": "2008-10-21",
+    "year": 2008,
+    "title": "Using Formal Behavioral Models in Software Development: From Real-World Problems to Software Systems"
+  },
+  {
+    "number": 164,
+    "name": "Søren Besenbacher",
+    "supervisors": "Christian Nørgaard Storm Pedersen",
+    "date_raw": "31-10-2008",
+    "date": "2008-10-31",
+    "year": 2008,
+    "title": "Challenges in whole-genome association mapping"
+  },
+  {
+    "number": 165,
+    "name": "Doina Bucur",
+    "supervisors": "Mogens Nielsen",
+    "date_raw": "21-11-2008",
+    "date": "2008-11-21",
+    "year": 2008,
+    "title": "On Context awareness in Ubiquitous Computing"
+  },
+  {
+    "number": 166,
+    "name": "Miroslava Sotakova",
+    "supervisors": "Louis Salvail",
+    "date_raw": "20-03-2009",
+    "date": "2009-03-20",
+    "year": 2009,
+    "title": "On the Power of Two-Party Quantum Cryptography"
+  },
+  {
+    "number": 167,
+    "name": "Martin Mogensen",
+    "supervisors": "Jakob Bardram",
+    "date_raw": "15-04-2009",
+    "date": "2009-04-15",
+    "year": 2009,
+    "title": "Infrastructure Support for Collaborative Pervasive Computing Systems"
+  },
+  {
+    "number": 168,
+    "name": "Jonathan Bech Bunde-Pedersen",
+    "supervisors": "Jakob Bardram",
+    "date_raw": "16-04-2009",
+    "date": "2009-04-16",
+    "year": 2009,
+    "title": "Distributed Interaction for Activity-Based Computing"
+  },
+  {
+    "number": 169,
+    "name": "Simon Tjell",
+    "supervisors": "Søren Christensen",
+    "date_raw": "28-04-2009",
+    "date": "2009-04-28",
+    "year": 2009,
+    "title": "Formal Requirements Modeling"
+  },
+  {
+    "number": 170,
+    "name": "Janus Dam Nielsen",
+    "supervisors": "Michael I. Schwartzbach",
+    "date_raw": "28-05-2009",
+    "date": "2009-05-28",
+    "year": 2009,
+    "title": "Languages for Secure Multiparty Computation and Towards Strongly Typed Macroes"
+  },
+  {
+    "number": 171,
+    "name": "Rune Ivan Thorbek",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "15-09-2009",
+    "date": "2009-09-15",
+    "year": 2009,
+    "title": "Linear Integer Secret Sharing"
+  },
+  {
+    "number": 172,
+    "name": "Karsten Østergaard Noe",
+    "supervisors": "Ole Østerby, Thomas Sangild",
+    "date_raw": "01-10-2009",
+    "date": "2009-10-01",
+    "year": 2009,
+    "title": "Deformable Image Registration for Use in Radiotherapy, Using GPU Acceleration"
+  },
+  {
+    "number": 173,
+    "name": "Thomas Mølhave",
+    "supervisors": "Lars Arge",
+    "date_raw": "21-10-2009",
+    "date": "2009-10-21",
+    "year": 2009,
+    "title": "Handling Massive Terrains and Unreliable Memory"
+  },
+  {
+    "number": 174,
+    "name": "Clemens Nylandsted Klokmose",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "22-10-2009",
+    "date": "2009-10-22",
+    "year": 2009,
+    "title": "On Human-Computer Interaction in Complex Artefact Ecologies"
+  },
+  {
+    "number": 175,
+    "name": "Klas Olof Daniel Andersson",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "31-10-2009",
+    "date": "2009-10-31",
+    "year": 2009,
+    "title": "Perfect-Information Games with Cycles"
+  },
+  {
+    "number": 176,
+    "name": "Martin Olsen",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "09-11-2009",
+    "date": "2009-11-09",
+    "year": 2009,
+    "title": "Link Building"
+  },
+  {
+    "number": 177,
+    "name": "Kristian Ellebæk Kjær",
+    "supervisors": "Klaus Marius Hansen",
+    "date_raw": "17-12-2009",
+    "date": "2009-12-17",
+    "year": 2009,
+    "title": "Participatory Middleware Design"
+  },
+  {
+    "number": 178,
+    "name": "Jacob Andersen",
+    "supervisors": "Lars Michael Kristensen",
+    "date_raw": "02-03-2010",
+    "date": "2010-03-02",
+    "year": 2010,
+    "title": "Medical Sensor Network Infrastructures"
+  },
+  {
+    "number": 179,
+    "name": "Allan Grønlund Jørgensen",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "29-04-2010",
+    "date": "2010-04-29",
+    "year": 2010,
+    "title": "Data Structures: Sequence Problems, Range Queries, and Fault Tolerance"
+  },
+  {
+    "number": 180,
+    "name": "Martin Joakim Bittel Geisler",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "11-05-2010",
+    "date": "2010-05-11",
+    "year": 2010,
+    "title": "Cryptographic Protocols: Theory and Implementation"
+  },
+  {
+    "number": 181,
+    "name": "Brian Bunch Christensen",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "25-05-2010",
+    "date": "2010-05-25",
+    "year": 2010,
+    "title": "Efficient Algorithms for Controllable Fluid Simulations and High-Resolution Level Set Deformaties"
+  },
+  {
+    "number": 182,
+    "name": "Mikkel Krøigaard",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "21-06-2010",
+    "date": "2010-06-21",
+    "year": 2010,
+    "title": "On the Computational Overhead of Secure Multiparty Computation"
+  },
+  {
+    "number": 183,
+    "name": "Bjarke Hammersholt Roune",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "17-08-2010",
+    "date": "2010-08-17",
+    "year": 2010,
+    "title": "Monomial Ideal Algorithms: Connections to Numerical Semigroups and Scarf's Theory of Bodies"
+  },
+  {
+    "number": 184,
+    "name": "Karl Bernhard Klose",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "02-09-2010",
+    "date": "2010-09-02",
+    "year": 2010,
+    "title": "On the expressiveness of Declarative Meta-Languages"
+  },
+  {
+    "number": 185,
+    "name": "Peter Dueholm Justesen",
+    "supervisors": "Christian Nørgaard Storm Pedersen",
+    "date_raw": "27-09-2010",
+    "date": "2010-09-27",
+    "year": 2010,
+    "title": "Distinct Candidates Optimization: A Novel Approach to Applied Evolutionary Multi-and Many-Objective Optimization"
+  },
+  {
+    "number": 186,
+    "name": "Mads Darø Kristensen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "30-09-2010",
+    "date": "2010-09-30",
+    "year": 2010,
+    "title": "Empowering Mobile Devices Through Cyper Foraging: The Development of Scavenger, and Open Mobile Cyber Foraging System"
+  },
+  {
+    "number": 187,
+    "name": "Michael Achenbach",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "07-10-2010",
+    "date": "2010-10-07",
+    "year": 2010,
+    "title": "An Engineering Approach to Dynamic Program Analysis by Layering Language Abstraction"
+  },
+  {
+    "number": 188,
+    "name": "Christian Martin Hofer",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "07-10-2010",
+    "date": "2010-10-07",
+    "year": 2010,
+    "title": "Embedded programming Languages and Their Representation"
+  },
+  {
+    "number": 189,
+    "name": "Rocio Santillan Rodriguez",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "12-10-2010",
+    "date": "2010-10-12",
+    "year": 2010,
+    "title": "Existence and computation of Equilibria in Auction Games"
+  },
+  {
+    "number": 190,
+    "name": "Anders Bach Nielsen",
+    "supervisors": "Erik Ernst",
+    "date_raw": "26-10-2010",
+    "date": "2010-10-26",
+    "year": 2010,
+    "title": "Initializing and Evaluation of Nested Class Structures"
+  },
+  {
+    "number": 191,
+    "name": "Carolin Gabriele Lunemann",
+    "supervisors": "Louis Salvail",
+    "date_raw": "12-11-2010",
+    "date": "2010-11-12",
+    "year": 2010,
+    "title": "Cryptographic Protocols under Quantum Attacks"
+  },
+  {
+    "number": 192,
+    "name": "Jesper Wolff Olsen",
+    "supervisors": "Preben Mogensen",
+    "date_raw": "27-01-2011",
+    "date": "2011-01-27",
+    "year": 2011,
+    "title": "Material Dispositions: a hybrid and interwoven design perspective"
+  },
+  {
+    "number": 193,
+    "name": "Claudio Orlandi",
+    "supervisors": "Ivan Damgaard",
+    "date_raw": "07-04-2011",
+    "date": "2011-04-07",
+    "year": 2011,
+    "title": "Secure Computation in Untrusted Environments"
+  },
+  {
+    "number": 194,
+    "name": "Thomas Greve Kristensen",
+    "supervisors": "Christian Storm Pedersen",
+    "date_raw": "16-06-2011",
+    "date": "2011-06-16",
+    "year": 2011,
+    "title": "Virtual Screening Algorithms"
+  },
+  {
+    "number": 195,
+    "name": "Karen Johanne Kortbek",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "27-06-2011",
+    "date": "2011-06-27",
+    "year": 2011,
+    "title": "Staging as a Holistic Perspective on Interaction Design for Public Enviroments"
+  },
+  {
+    "number": 196,
+    "name": "Pooya Davoodi",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "04-07-2011",
+    "date": "2011-07-04",
+    "year": 2011,
+    "title": "Data Structures: Range Queries and Space Efficiency"
+  },
+  {
+    "number": 197,
+    "name": "Gert Læssøe Mikkelsen",
+    "supervisors": "Ivan Damgaard",
+    "date_raw": "08-08-2011",
+    "date": "2011-08-08",
+    "year": 2011,
+    "title": "On the protection of digital identities through threshold cryptography"
+  },
+  {
+    "number": 198,
+    "name": "Konstantinos Tsakalidis",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "23-09-2011",
+    "date": "2011-09-23",
+    "year": 2011,
+    "title": "Dynamic data structures: Orthogonal range queries and update efficiency"
+  },
+  {
+    "number": 199,
+    "name": "Nikolaj Gandrup Borchorst",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "28-09-2011",
+    "date": "2011-09-28",
+    "year": 2011,
+    "title": "Participatory citizenship - supporting citizen empowerment in digitally mediated public service provision"
+  },
+  {
+    "number": 200,
+    "name": "Jesper Nielsen",
+    "supervisors": "Christian Storm Pedersen",
+    "date_raw": "28-10-2011",
+    "date": "2011-10-28",
+    "year": 2011,
+    "title": "Engineering algorithms for finding patterns in biological data"
+  },
+  {
+    "number": 201,
+    "name": "Morten Bohøj",
+    "supervisors": "Susanne Bødker, Niels Olof Bouvin",
+    "date_raw": "11-11-2011",
+    "date": "2011-11-11",
+    "year": 2011,
+    "title": "Engaging the citizens through collaborative, mobile and web-based public services"
+  },
+  {
+    "number": 202,
+    "name": "Martin Simonsen",
+    "supervisors": "Christian Storm Pedersen",
+    "date_raw": "09-12-2011",
+    "date": "2011-12-09",
+    "year": 2011,
+    "title": "Efficient algorithms for tree reconstruction and prediction of molecular interactions"
+  },
+  {
+    "number": 203,
+    "name": "Torben Godsk",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "14-12-2011",
+    "date": "2011-12-14",
+    "year": 2011,
+    "title": "Methods and software architecture for activity recognition from position data - applied to cow activity recognition"
+  },
+  {
+    "number": 204,
+    "name": "Jakob Løvstad Funder",
+    "supervisors": "Ivan Damgaard",
+    "date_raw": "09-01-2012",
+    "date": "2012-01-09",
+    "year": 2012,
+    "title": "Cryptography with quantum mechanics"
+  },
+  {
+    "number": 205,
+    "name": "Thomas Toftkjær",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "10-01-2012",
+    "date": "2012-01-10",
+    "year": 2012,
+    "title": "Accurate positioning of pedestrains in mixed indoor/outdoor settings - A particle filter approach to sensor and map fusion"
+  },
+  {
+    "number": 206,
+    "name": "Jakob Langdal Jensen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "12-01-2012",
+    "date": "2012-01-12",
+    "year": 2012,
+    "title": "Supporting seamful development of positioning applications through model based translucent middleware"
+  },
+  {
+    "number": 207,
+    "name": "Marcel Karl Sven Keller",
+    "supervisors": "Ivan Damgaard",
+    "date_raw": "16-01-2012",
+    "date": "2012-01-16",
+    "year": 2012,
+    "title": "Theory and practice of cryptographic protocols -or- cryptography: will it blend?"
+  },
+  {
+    "number": 208,
+    "name": "Morten Tranberg Hansen",
+    "supervisors": "Niels Olof Bouvin",
+    "date_raw": "23-01-2012",
+    "date": "2012-01-23",
+    "year": 2012,
+    "title": "Low-power wireless sensor network infrastructures"
+  },
+  {
+    "number": 209,
+    "name": "Johnni Winther",
+    "supervisors": "Michael Schwartzbach",
+    "date_raw": "22-03-2012",
+    "date": "2012-03-22",
+    "year": 2012,
+    "title": "Improving precision of types"
+  },
+  {
+    "number": 210,
+    "name": "Niels Raabjerg Mathiasen",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "26-03-2012",
+    "date": "2012-03-26",
+    "year": 2012,
+    "title": "While working around security"
+  },
+  {
+    "number": 211,
+    "name": "Allan Rasmusson",
+    "supervisors": "Peter Møller-Nielsen",
+    "date_raw": "16-04-2012",
+    "date": "2012-04-16",
+    "year": 2012,
+    "title": "Contributions to computational stereology and parallel programming"
+  },
+  {
+    "number": 212,
+    "name": "Thomas Dueholm Hansen",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "07-09-2012",
+    "date": "2012-09-07",
+    "year": 2012,
+    "title": "Worst-case analysis of strategy iteration and the simplex method"
+  },
+  {
+    "number": 213,
+    "name": "Lasse Kosetski Deleuran",
+    "supervisors": "Lars Arge",
+    "date_raw": "17-09-2012",
+    "date": "2012-09-17",
+    "year": 2012,
+    "title": "Homotopic polygonal line simplification"
+  },
+  {
+    "number": 214,
+    "name": "Jonas Kölker",
+    "supervisors": "Ivan Damgaard",
+    "date_raw": "26-10-2012",
+    "date": "2012-10-26",
+    "year": 2012,
+    "title": "I/O-efficient multiparty computation, formulaic secret sharing and np-complete puzzles"
+  },
+  {
+    "number": 215,
+    "name": "Freek Hendrik Van Walderveen",
+    "supervisors": "Lars Arge",
+    "date_raw": "30-10-2012",
+    "date": "2012-10-30",
+    "year": 2012,
+    "title": "External memory graph algorithms and range searching data structures"
+  },
+  {
+    "number": 216,
+    "name": "Peter S. Nordholt",
+    "supervisors": "Ivan Damgård, Jesper Buus Nielsen",
+    "date_raw": "08-04-2013",
+    "date": "2013-04-08",
+    "year": 2013,
+    "title": "New Approaches to Practical Secure Two-Party Computation"
+  },
+  {
+    "number": 217,
+    "name": "Mathias Romme Schwarz",
+    "supervisors": "Anders Møller",
+    "date_raw": "23-04-2013",
+    "date": "2013-04-23",
+    "year": 2013,
+    "title": "Design and Analysis of Web Application Frameworks"
+  },
+  {
+    "number": 218,
+    "name": "Simon Holm Jensen",
+    "supervisors": "Anders Møller",
+    "date_raw": "23-04-2013",
+    "date": "2013-04-23",
+    "year": 2013,
+    "title": "Static Analysis for JavaScript"
+  },
+  {
+    "number": 219,
+    "name": "Sigurd Torkel Meldgaard",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "23-04-2013",
+    "date": "2013-04-23",
+    "year": 2013,
+    "title": "Unconditionally Secure Protocols"
+  },
+  {
+    "number": 220,
+    "name": "Matthias Korn",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "07-05-2013",
+    "date": "2013-05-07",
+    "year": 2013,
+    "title": "Situating Engagement: Ubiquitous Infrastructures for In-Situ Civic Engagement"
+  },
+  {
+    "number": 221,
+    "name": "Kasper Green Larsen",
+    "supervisors": "Lars Arge",
+    "date_raw": "17-05-2013",
+    "date": "2013-05-17",
+    "year": 2013,
+    "title": "Models and Techniques for Proving Data Structure Lower Bounds"
+  },
+  {
+    "number": 222,
+    "name": "Morten Dahl Jørgensen",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "19-06-2013",
+    "date": "2013-06-19",
+    "year": 2013,
+    "title": "Symbolic Analysis of Cryptographic Protocols: Models, Methods, and Soundness"
+  },
+  {
+    "number": 223,
+    "name": "Mads Schaarup Andersen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "03-09-2013",
+    "date": "2013-09-03",
+    "year": 2013,
+    "title": "Multi-dimensional Location Privacy - Concepts, Architecture, and User Interface"
+  },
+  {
+    "number": 224,
+    "name": "Jakob Grauenkjær Thomsen",
+    "supervisors": "Erik Ernst",
+    "date_raw": "27-09-2013",
+    "date": "2013-09-27",
+    "year": 2013,
+    "title": "Consistency in the World Wide Web: Specification, Verification, and Evaluation"
+  },
+  {
+    "number": 225,
+    "name": "Valerio Pastro",
+    "supervisors": "Ivan Bjerre Damgaard",
+    "date_raw": "10-10-2013",
+    "date": "2013-10-10",
+    "year": 2013,
+    "title": "Zero-Knowledge Protocols and Multiparty Computation"
+  },
+  {
+    "number": 226,
+    "name": "Rikke Bendlin",
+    "supervisors": "Ivan Bjerre Damgaard",
+    "date_raw": "11-10-2013",
+    "date": "2013-10-11",
+    "year": 2013,
+    "title": "Lattice-based Cryptography - Threshold Protocols and Multiparty Computation"
+  },
+  {
+    "number": 227,
+    "name": "Rasmus Ibsen-Jensen",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "04-11-2013",
+    "date": "2013-11-04",
+    "year": 2013,
+    "title": "Strategy complexity of two player, zero-sum games"
+  },
+  {
+    "number": 228,
+    "name": "Casper Kejlberg-Rasmussen",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "18-11-2013",
+    "date": "2013-11-18",
+    "year": 2013,
+    "title": "Dynamic Data Structures: The Interplay of Invariants and Algorithm Design"
+  },
+  {
+    "number": 229,
+    "name": "Ian Steven Zerny",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "09-12-2013",
+    "date": "2013-12-09",
+    "year": 2013,
+    "title": "The Interpretation and Inter-derivation of Small-step and Big-step Specifications"
+  },
+  {
+    "number": 230,
+    "name": "Vaida Ceikute",
+    "supervisors": "Christian S. Jensen",
+    "date_raw": "10-12-2013",
+    "date": "2013-12-10",
+    "year": 2013,
+    "title": "Inferring Groups of Objects, Preferred Routes, and Facility Locations from Trajectories"
+  },
+  {
+    "number": 231,
+    "name": "Angela Zottarel",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "14-01-2014",
+    "date": "2014-01-14",
+    "year": 2014,
+    "title": "Public-key Cryptography from Weaker Assumption"
+  },
+  {
+    "number": 232,
+    "name": "Nervo Xavier Verdezoto Dias",
+    "supervisors": "Morten Kyng",
+    "date_raw": "24-02-2014",
+    "date": "2014-02-24",
+    "year": 2014,
+    "title": "Home-based Self-Care – Understanding and Designing Pervasive Technology to Support Care Management Work at Home"
+  },
+  {
+    "number": 233,
+    "name": "Sarah Zakarias",
+    "supervisors": "Ivan Damgaard",
+    "date_raw": "29-04-2014",
+    "date": "2014-04-29",
+    "year": 2014,
+    "title": "Secure Computation in the Preprocessing Model"
+  },
+  {
+    "number": 234,
+    "name": "Manohar Kaul",
+    "supervisors": "Christian S. Jensen",
+    "date_raw": "19-08-2014",
+    "date": "2014-08-19",
+    "year": 2014,
+    "title": "Enabling Advanced Path-Finding on Terrains and in Spatial Networks"
+  },
+  {
+    "number": 235,
+    "name": "Pavel Hubacek",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "08-09-2014",
+    "date": "2014-09-08",
+    "year": 2014,
+    "title": "Rationality in the Cryptographic Model"
+  },
+  {
+    "number": 236,
+    "name": "Anders Skovsgaard",
+    "supervisors": "Christian S. Jensen",
+    "date_raw": "16-09-2014",
+    "date": "2014-09-16",
+    "year": 2014,
+    "title": "Indexing, Query Processing, and Clustering of Spatio-Temporal Text Objects"
+  },
+  {
+    "number": 237,
+    "name": "Andreas Sand Pedersen",
+    "supervisors": "Christian N. S. Pedersen",
+    "date_raw": "18-09-2014",
+    "date": "2014-09-18",
+    "year": 2014,
+    "title": "Engineering of Algorithms for Hidden Markov Models and Tree Distances"
+  },
+  {
+    "number": 238,
+    "name": "Laura Radaelli",
+    "supervisors": "Christian S. Jensen",
+    "date_raw": "10-10-2014",
+    "date": "2014-10-10",
+    "year": 2014,
+    "title": "Enabling indoor location-based services"
+  },
+  {
+    "number": 239,
+    "name": "Vikas Gupta",
+    "supervisors": "Christian N. S. Pedersen",
+    "date_raw": "24-10-2014",
+    "date": "2014-10-24",
+    "year": 2014,
+    "title": "Applied bioinformatics: Genome annotation and transcriptome analysis"
+  },
+  {
+    "number": 240,
+    "name": "Morten Revsbæk",
+    "supervisors": "Lars Arge",
+    "date_raw": "14-11-2014",
+    "date": "2014-11-14",
+    "year": 2014,
+    "title": "Handling Massive and Dynamic Terrain Data"
+  },
+  {
+    "number": 241,
+    "name": "Navid Talebanfard",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "17-11-2014",
+    "date": "2014-11-17",
+    "year": 2014,
+    "title": "On the Combinatorics of SAT and the Complexity of Planar Problems"
+  },
+  {
+    "number": 242,
+    "name": "Qiang Qu",
+    "supervisors": "Christian S. Jensen",
+    "date_raw": "03-12-2014",
+    "date": "2014-12-03",
+    "year": 2014,
+    "title": "Efficient Extraction of Content from Enriched Geospatial and Networked Data"
+  },
+  {
+    "number": 243,
+    "name": "Asger Felthaus",
+    "supervisors": "Anders Møller",
+    "date_raw": "09-01-2015",
+    "date": "2015-01-09",
+    "year": 2015,
+    "title": "Pointer Analysis for JavaScript Programming Tools"
+  },
+  {
+    "number": 244,
+    "name": "Paula Tataru",
+    "supervisors": "Christian N. S. Pedersen",
+    "date_raw": "23-01-2015",
+    "date": "2015-01-23",
+    "year": 2015,
+    "title": "Inference of population history and patterns from molecular data"
+  },
+  {
+    "number": 245,
+    "name": "Casper Svenning Jensen",
+    "supervisors": "Anders Møller",
+    "date_raw": "09-03-2015",
+    "date": "2015-03-09",
+    "year": 2015,
+    "title": "Automated Testing of Event-Driven Applications"
+  },
+  {
+    "number": 246,
+    "name": "Jacob Johannsen",
+    "supervisors": "Olivier Danvy",
+    "date_raw": "13-03-2015",
+    "date": "2015-03-13",
+    "year": 2015,
+    "title": "On Computational Small Steps and Big Steps: Refocusing for Outermost Reduction"
+  },
+  {
+    "number": 247,
+    "name": "Jakob Truelsen",
+    "supervisors": "Gerth S. Brodal",
+    "date_raw": "17-04-2015",
+    "date": "2015-04-17",
+    "year": 2015,
+    "title": "Space Efficient Data Structures and External Terrain Algorithms"
+  },
+  {
+    "number": 248,
+    "name": "Simina Branzei",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "29-04-2015",
+    "date": "2015-04-29",
+    "year": 2015,
+    "title": "Computational Fair Division"
+  },
+  {
+    "number": 249,
+    "name": "Jungwoo Yang",
+    "supervisors": "Jungwoo Yang",
+    "date_raw": "Lars Arge",
+    "date": "Lars Arge",
+    "year": null,
+    "title": "13-05-2015"
+  },
+  {
+    "number": 250,
+    "name": "Magnus Madsen",
+    "supervisors": "Anders Møller",
+    "date_raw": "19-05-215",
+    "date": "2015-05-19",
+    "year": 2015,
+    "title": "Static Analysis of Dynamic Languages"
+  },
+  {
+    "number": 251,
+    "name": "Barbora Micenkova",
+    "supervisors": "Barbora Micenkova",
+    "date_raw": "Ira Assent",
+    "date": "Ira Assent",
+    "year": null,
+    "title": "22-05-2015"
+  },
+  {
+    "number": 252,
+    "name": "Aris Filos-Ratsikas",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "05-08-2015",
+    "date": "2015-08-05",
+    "year": 2015,
+    "title": "Social Welfare in Algorithmic Mechanism Design Without Money"
+  },
+  {
+    "number": 253,
+    "name": "Majken Rasmussen",
+    "supervisors": "Marianne Graves Petersen",
+    "date_raw": "02-09-2015",
+    "date": "2015-09-02",
+    "year": 2015,
+    "title": "Changing the Shape of Interaction: Shape-changing Interfaces"
+  },
+  {
+    "number": 254,
+    "name": "Thomas P Jakobsen",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "22-09-2015",
+    "date": "2015-09-22",
+    "year": 2015,
+    "title": "Practical Aspects of Secure Multiparty Computation"
+  },
+  {
+    "number": 256,
+    "name": "Jesper Asbjørn Sindahl Nielsen",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "25-09-2015",
+    "date": "2015-09-25",
+    "year": 2015,
+    "title": "Implicit Data Structures, Sorting, and Text Indexing"
+  },
+  {
+    "number": 257,
+    "name": "Yu Ma",
+    "supervisors": "Christian S. Jensen",
+    "date_raw": "13-10-2015",
+    "date": "2015-10-13",
+    "year": 2015,
+    "title": "Enabling Time-Dependent Uncertain Edge Weights and Stochastic Routing in Road Networks"
+  },
+  {
+    "number": 258,
+    "name": "Pratyay Mukherjee",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "19-10-2015",
+    "date": "2015-10-19",
+    "year": 2015,
+    "title": "Protecting Cryptographic Memory against Tampering Attack"
+  },
+  {
+    "number": 259,
+    "name": "Bryan Wilkinson",
+    "supervisors": "Lars Arge",
+    "date_raw": "29-10-2015",
+    "date": "2015-10-29",
+    "year": 2015,
+    "title": "Exploring the Problem Space of Orthogonal Range Searching"
+  },
+  {
+    "number": 260,
+    "name": "Søren Stiil Frederiksen",
+    "supervisors": "Peter Bro Miltersen",
+    "date_raw": "29-10-2015",
+    "date": "2015-10-29",
+    "year": 2015,
+    "title": "Semi-algebraic Geometry for Stochastic Games"
+  },
+  {
+    "number": 261,
+    "name": "Tore Kasper Frederiksen",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "29-10-2015",
+    "date": "2015-10-29",
+    "year": 2015,
+    "title": "The Hitchhiker’s Guide to Garbled Circuits: Garbled Circuits and their Applications to Maliciously Secure Two-Party Protocols"
+  },
+  {
+    "number": 262,
+    "name": "Thor Siiger Prentow",
+    "supervisors": "Mikkel Baun Kjærgaard, Kaj Grønbæk, and Henrik Blunck",
+    "date_raw": "16-11-2015",
+    "date": "2015-11-16",
+    "year": 2015,
+    "title": "Spatio-Temporal Analysis of Human Activities in Indoor Environments through Mobile Sensing"
+  },
+  {
+    "number": 263,
+    "name": "Michael Lind Mortensen",
+    "supervisors": "Ira Assent",
+    "date_raw": "29-01-2016",
+    "date": "2016-01-29",
+    "year": 2016,
+    "title": "Multi-Criteria Decision Support Queries in Exploratory & Open World Settings"
+  },
+  {
+    "number": 264,
+    "name": "Rasmus W. Zakarias",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "22-03-2016",
+    "date": "2016-03-22",
+    "year": 2016,
+    "title": "Practical Secure Computation with Pre-Processing"
+  },
+  {
+    "number": 265,
+    "name": "Aleš Bizjak",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "15-05-2016",
+    "date": "2016-05-15",
+    "year": 2016,
+    "title": "On semantics and applications of guarded recursion"
+  },
+  {
+    "number": 266,
+    "name": "Matthias Nielsen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "20-04-2016",
+    "date": "2016-04-20",
+    "year": 2016,
+    "title": "Interactive Visual Analytics of Big Data - a Web-Based Approach"
+  },
+  {
+    "number": 267,
+    "name": "Esben Andreasen",
+    "supervisors": "Anders Møller",
+    "date_raw": "24-08-2016",
+    "date": "2016-08-24",
+    "year": 2016,
+    "title": "Designing abstractions for JavaScript program analysis"
+  },
+  {
+    "number": 268,
+    "name": "Fabio Strocco",
+    "supervisors": "Anders Møller",
+    "date_raw": "08-09-2016",
+    "date": "2016-09-08",
+    "year": 2016,
+    "title": "Type Soundness in the Dart Programming Language"
+  },
+  {
+    "number": 269,
+    "name": "Allan Stisen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "01-11-2016",
+    "date": "2016-11-01",
+    "year": 2016,
+    "title": "Mobile Sensing and Recognition of Human Activities to Support Work Coordination"
+  },
+  {
+    "number": 270,
+    "name": "Mads Møller Jensen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "02-11-2016",
+    "date": "2016-11-02",
+    "year": 2016,
+    "title": "Game Mechanics and Bodily Interactions: Designing Interactive Technologies for Sports Training"
+  },
+  {
+    "number": 271,
+    "name": "Carsten Baum",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "07-11-2016",
+    "date": "2016-11-07",
+    "year": 2016,
+    "title": "Towards More Efficient Secure Multiparty Computation in the Preprocessing Model"
+  },
+  {
+    "number": 272,
+    "name": "Hans Bugge Grathwohl",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "06-12-2016",
+    "date": "2016-12-06",
+    "year": 2016,
+    "title": "Guarded Recursive Type Theory"
+  },
+  {
+    "number": 273,
+    "name": "Tobias Sonne",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "20-12-2016",
+    "date": "2016-12-20",
+    "year": 2016,
+    "title": "Assistive Technologies to Empower Children with ADHD: Conceptual Framework and Technological Solutions"
+  },
+  {
+    "number": 274,
+    "name": "Irene Giacomelli",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "04-01-2017",
+    "date": "2017-01-04",
+    "year": 2017,
+    "title": "New Applications of Secret-Sharing in Cryptography"
+  },
+  {
+    "number": 275,
+    "name": "Kenneth S. Bøgh",
+    "supervisors": "Ira Assent",
+    "date_raw": "01-02-2017",
+    "date": "2017-02-01",
+    "year": 2017,
+    "title": "Parallel Algorithms for Skyline and Skycube Computation on Multicore CPUs and GPUs"
+  },
+  {
+    "number": 276,
+    "name": "Henrik Korsgaard",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "20-02-2017",
+    "date": "2017-02-20",
+    "year": 2017,
+    "title": "Toward Place-Centric Computing : Making Place With Technology Together"
+  },
+  {
+    "number": 277,
+    "name": "Antigoni Polychroniadou",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "07-03-2017",
+    "date": "2017-03-07",
+    "year": 2017,
+    "title": "On the Communication and Round Complexity of Secure Computation"
+  },
+  {
+    "number": 278,
+    "name": "Bernardo M. David",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "05-05-2017",
+    "date": "2017-05-05",
+    "year": 2017,
+    "title": "A Framework For Efficient Homomorphic Universally Composable Commitments"
+  },
+  {
+    "number": 279,
+    "name": "Ingo van Duijn",
+    "supervisors": "Peyman Afshani",
+    "date_raw": "12-09-2017",
+    "date": "2017-09-12",
+    "year": 2017,
+    "title": "Algorithmic Aspects of Arrangements and Incidences"
+  },
+  {
+    "number": 280,
+    "name": "Roberto Trifiletti",
+    "supervisors": "Jesper Buus",
+    "date_raw": "29-09-2017",
+    "date": "2017-09-29",
+    "year": 2017,
+    "title": "Amortizing Maliciously Secure Two-party Computation"
+  },
+  {
+    "number": 281,
+    "name": "Anders Lehman",
+    "supervisors": "Niels Olof Bouvin",
+    "date_raw": "29-10-2017",
+    "date": "2017-10-29",
+    "year": 2017,
+    "title": "Modelling Emission of Pollutants from transportation using mobile sensing data: Advancing modelling of street level pollution and climate forcing gas emissions"
+  },
+  {
+    "number": 282,
+    "name": "Edvin Berglin",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "29-11-2017",
+    "date": "2017-11-29",
+    "year": 2017,
+    "title": "Geometric covers, graph orientations, counter games"
+  },
+  {
+    "number": 283,
+    "name": "Matúš Tomlein",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "03-04-2018",
+    "date": "2018-04-03",
+    "year": 2018,
+    "title": "Context-Aware Integrability and Maintainability of Cyber-Physical Ecosystems: Tactics and Tools"
+  },
+  {
+    "number": 284,
+    "name": "Christoffer Quist Adamsen",
+    "supervisors": "Anders Møller",
+    "date_raw": "23-05-2018",
+    "date": "2018-05-23",
+    "year": 2018,
+    "title": "Automated Testing Techniques for Event-Driven and Dynamically Typed Software Applications"
+  },
+  {
+    "number": 285,
+    "name": "Yujin Shin",
+    "supervisors": "Lars Arge",
+    "date_raw": "28-09-2018",
+    "date": "2018-09-28",
+    "year": 2018,
+    "title": "External Memory Algorithms for Massive Terrains and Polygons"
+  },
+  {
+    "number": 286,
+    "name": "Andreas Fender",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "23-10-2018",
+    "date": "2018-10-23",
+    "year": 2018,
+    "title": "Optimal Placement of Virtual Content in Physical Space"
+  },
+  {
+    "number": 287,
+    "name": "Tiare Feuchtner",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "24-10-2018",
+    "date": "2018-10-24",
+    "year": 2018,
+    "title": "Designing for Hand Ownership in Interaction with Virtual and Augmented Reality"
+  },
+  {
+    "number": 288,
+    "name": "Morten Krogh-Jespersen",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "12-12-2018",
+    "date": "2018-12-12",
+    "year": 2018,
+    "title": "Towards Modular Reasoning for Stateful and Concurrent Programs"
+  },
+  {
+    "number": 289,
+    "name": "Mathias Rav",
+    "supervisors": "Lars Arge",
+    "date_raw": "18-01-2019",
+    "date": "2019-01-18",
+    "year": 2019,
+    "title": "Event-Based Flood Risk Assessment on Massive Terrains"
+  },
+  {
+    "number": 290,
+    "name": "Satrajit Ghosh",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "15-03-2019",
+    "date": "2019-03-15",
+    "year": 2019,
+    "title": "Secure Computation Based on Oblivious Function Evaluation(not available online)"
+  },
+  {
+    "number": 291,
+    "name": "Sabine Oechsner",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "28-03-2019",
+    "date": "2019-03-28",
+    "year": 2019,
+    "title": "Constructions and Proof Techniques for Secure Computation(not available online)"
+  },
+  {
+    "number": 292,
+    "name": "Michael Nielsen",
+    "supervisors": "Ivan Bjerre Damgård",
+    "date_raw": "15-04-2019",
+    "date": "2019-04-15",
+    "year": 2019,
+    "title": "Correlated randomness in cryptographic protocols(not available online)"
+  },
+  {
+    "number": 293,
+    "name": "Helene Haagh",
+    "supervisors": "Claudio Orlandi",
+    "date_raw": "13-08-2019",
+    "date": "2019-08-13",
+    "year": 2019,
+    "title": "Fine-grained Access and Secure Computation on Encrypted Data(not available online)"
+  },
+  {
+    "number": 294,
+    "name": "Andreas Mathisen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "14-08-2019",
+    "date": "2019-08-14",
+    "year": 2019,
+    "title": "Collaborative Visual Analytics: Leveraging Mixed Expertise in Data Analysis"
+  },
+  {
+    "number": 295,
+    "name": "Kasper Buhl Jakobsen",
+    "supervisors": "Marianne Graves Petersen",
+    "date_raw": "03-10-2019",
+    "date": "2019-10-03",
+    "year": 2019,
+    "title": "Graphene-based Interaction Design for Constructive Play: Tangible Music-making Technologies for Children"
+  },
+  {
+    "number": 296,
+    "name": "Manuel Rafael Ciosici",
+    "supervisors": "Ira Assent",
+    "date_raw": "08-10-2019",
+    "date": "2019-10-08",
+    "year": 2019,
+    "title": "Characterizing Word Representations For Natural Language Processing"
+  },
+  {
+    "number": 297,
+    "name": "Mark Simkin",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "22-10-2019",
+    "date": "2019-10-22",
+    "year": 2019,
+    "title": "Alice, Bits, and Bob"
+  },
+  {
+    "number": 298,
+    "name": "Mathias Pedersen",
+    "supervisors": "Aslan Askarov",
+    "date_raw": "23-10-2019",
+    "date": "2019-10-23",
+    "year": 2019,
+    "title": "Enforcement of Timing-Sensitive Security Policies in Runtime Systems"
+  },
+  {
+    "number": 299,
+    "name": "Konstantinos Mampentzidis",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "24-10-2019",
+    "date": "2019-10-24",
+    "year": 2019,
+    "title": "Comparison and Construction of Phylogenetic Trees and Networks"
+  },
+  {
+    "number": 300,
+    "name": "Erik Krogh Kristensen",
+    "supervisors": "Anders Møller",
+    "date_raw": "31-10-2019",
+    "date": "2019-10-31",
+    "year": 2019,
+    "title": "Automated Techniques for Creation and Maintenance of TypeScript Declaration Files"
+  },
+  {
+    "number": 301,
+    "name": "Kristoffer Just Arndal Andersen",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "13-11-2019",
+    "date": "2019-11-13",
+    "year": 2019,
+    "title": "Automatic Program Verification(not available online)"
+  },
+  {
+    "number": 302,
+    "name": "Lau Skorstengaard",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "14-11-2019",
+    "date": "2019-11-14",
+    "year": 2019,
+    "title": "Formal Reasoning about Capability Machines"
+  },
+  {
+    "number": 303,
+    "name": "Alvis Logins",
+    "supervisors": "Panagiotis Karras",
+    "date_raw": "30-03-2020",
+    "date": "2020-03-30",
+    "year": 2020,
+    "title": "Resource Allocation in Networks"
+  },
+  {
+    "number": 304,
+    "name": "Jens Emil Grønbæk",
+    "supervisors": "Marianne Graves Petersen",
+    "date_raw": "06-05-2020",
+    "date": "2020-05-06",
+    "year": 2020,
+    "title": "Rethinking Proxemics - Designing Interactive Technologies for Co-located Collaboration"
+  },
+  {
+    "number": 305,
+    "name": "Jan Neerbek",
+    "supervisors": "Ira Assent",
+    "date_raw": "01-09-2020",
+    "date": "2020-09-01",
+    "year": 2020,
+    "title": "Sensitive Information Detection: Recursive Neural Networks for Encoding Context"
+  },
+  {
+    "number": 306,
+    "name": "Ida Larsen-Ledet",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "06-10-2020",
+    "date": "2020-10-06",
+    "year": 2020,
+    "title": "More Than Writing Text: Multiplicity in Collaborative Academic Writing"
+  },
+  {
+    "number": 307,
+    "name": "Casper Benjamin Freksen",
+    "supervisors": "Kasper Green Larsen",
+    "date_raw": "09-11-2020",
+    "date": "2020-11-09",
+    "year": 2020,
+    "title": "A song of Johnson and Lindenstrauss"
+  },
+  {
+    "number": 308,
+    "name": "Anders Peter Kragh Dalskov",
+    "supervisors": "Claudio Orlandi",
+    "date_raw": "16-11-2020",
+    "date": "2020-11-16",
+    "year": 2020,
+    "title": "Cats or Croissants? Techniques for Secure Inference"
+  },
+  {
+    "number": 309,
+    "name": "Benjamin Barslev Nielsen",
+    "supervisors": "Anders Møller",
+    "date_raw": "29-01-2021",
+    "date": "2021-01-29",
+    "year": 2021,
+    "title": "Static Analysis for Node.js"
+  },
+  {
+    "number": 310,
+    "name": "Anke van Oosterhout",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "23-02-2021",
+    "date": "2021-02-23",
+    "year": 2021,
+    "title": "A Design Perspective on Force Feedback"
+  },
+  {
+    "number": 311,
+    "name": "Mirzel Avdic",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "20-04-2021",
+    "date": "2021-04-20",
+    "year": 2021,
+    "title": "Physical Actuation as an Alternative Approach to the Intelligibility of Smart Speakers"
+  },
+  {
+    "number": 312,
+    "name": "Nathalie Alexandra Bressa",
+    "supervisors": "Susanne Bødker",
+    "date_raw": "03-08-2021",
+    "date": "2021-08-03",
+    "year": 2021,
+    "title": "Data In Situ: a Design Approach for Situated Visualization"
+  },
+  {
+    "number": 313,
+    "name": "Troels Rasmussen",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "04-08-2021",
+    "date": "2021-08-04",
+    "year": 2021,
+    "title": "Supporting Tailorability and Awareness for Remote Assistance in Large Industrial Task Spaces"
+  },
+  {
+    "number": 314,
+    "name": "Simon Aagaard Enni",
+    "supervisors": "Ira Assent",
+    "date_raw": "12-08-2021",
+    "date": "2021-08-12",
+    "year": 2021,
+    "title": "Deliberation and Dissemination in Machine Learning"
+  },
+  {
+    "number": 315,
+    "name": "Svend Christian Svendsen",
+    "supervisors": "Lars Arge and Gerth Stølting Brodal",
+    "date_raw": "07-10-2021",
+    "date": "2021-10-07",
+    "year": 2021,
+    "title": "Algorithms for Massive Terrains and Graphs"
+  },
+  {
+    "number": 316,
+    "name": "Daniel Esteban Escudero Ospina",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "02-11-2021",
+    "date": "2021-11-02",
+    "year": 2021,
+    "title": "Multiparty Computation over $\\mathbb{Z}/2^k\\mathbb{Z}$"
+  },
+  {
+    "number": 317,
+    "name": "Martin Toldam Torp",
+    "supervisors": "Anders Møller",
+    "date_raw": "26-11-2021",
+    "date": "2021-11-26",
+    "year": 2021,
+    "title": "Techniques and Tools for Supporting Maintenance of Node.js Programs"
+  },
+  {
+    "number": 318,
+    "name": "Frederik Hvilshøj",
+    "supervisors": "Ira Assent",
+    "date_raw": "09-12-2021",
+    "date": "2021-12-09",
+    "year": 2021,
+    "title": "Fast and Explainable Deep Neural Networks"
+  },
+  {
+    "number": 319,
+    "name": "Alexander Mathiasen",
+    "supervisors": "Kasper Green Larsen",
+    "date_raw": "31-01-2022",
+    "date": "2022-01-31",
+    "year": 2022,
+    "title": "Algorithmic Improvements to Boosting and Neural Networks"
+  },
+  {
+    "number": 320,
+    "name": "Martin Ernst Bidlingmaier",
+    "supervisors": "Bas Spitters",
+    "date_raw": "22-04-2022",
+    "date": "2022-04-22",
+    "year": 2022,
+    "title": "Probabilistic Programming and Multiverse Models of Type Theory"
+  },
+  {
+    "number": 321,
+    "name": "Marcel Borowski",
+    "supervisors": "Clemens Klokmose",
+    "date_raw": "16-05-2022",
+    "date": "2022-05-16",
+    "year": 2022,
+    "title": "Exploring Computational Media as a Possible Future of Software"
+  },
+  {
+    "number": 322,
+    "name": "Joachim Christensen Nyborg",
+    "supervisors": "Ira Assent",
+    "date_raw": "30-05-2022",
+    "date": "2022-05-30",
+    "year": 2022,
+    "title": "Deep Learning for Remote Sensing in Precision Agriculture: Large-scale and label-efficient methods for satellite image data"
+  },
+  {
+    "number": 323,
+    "name": "Akira Takahashi",
+    "supervisors": "Claudio Orlandi",
+    "date_raw": "28-06-2022",
+    "date": "2022-06-28",
+    "year": 2022,
+    "title": "Cryptography from Zero Knowledge: Advanced Security and New Constructions"
+  },
+  {
+    "number": 324,
+    "name": "Hamidreza Khoshaklagh",
+    "supervisors": "Jesper Buus",
+    "date_raw": "31-08-2022",
+    "date": "2022-08-31",
+    "year": 2022,
+    "title": "Cryptography for Scalability and Identity in Blockchain Applications"
+  },
+  {
+    "number": 325,
+    "name": "Jakob Rødsgaard Jørgensen",
+    "supervisors": "Ira Assent",
+    "date_raw": "22-09-2022",
+    "date": "2022-09-22",
+    "year": 2022,
+    "title": "Parallel algorithms for clustering, subspace clustering, and projected clustering on the GPU"
+  },
+  {
+    "number": 326,
+    "name": "Rasmus Killmann Brogaard Petersen",
+    "supervisors": "Peyman Afshani",
+    "date_raw": "29-09-2022",
+    "date": "2022-09-29",
+    "year": 2022,
+    "title": "A Tale of Twines, Quadrangles and Colorful Hierarchies"
+  },
+  {
+    "number": 327,
+    "name": "Judith Hermanns",
+    "supervisors": "Panagiotis Karras",
+    "date_raw": "11-10-2022",
+    "date": "2022-10-11",
+    "year": 2022,
+    "title": "Spectral Graph Correspondences"
+  },
+  {
+    "number": 328,
+    "name": "Zesen Qian",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "18-11-2022",
+    "date": "2022-11-18",
+    "year": 2022,
+    "title": "Concurrency and Races in Classical Linear Logic"
+  },
+  {
+    "number": 329,
+    "name": "Wenkai Han",
+    "supervisors": "Hans-Jörg Schulz",
+    "date_raw": "13-01-2023",
+    "date": "2023-01-13",
+    "year": 2023,
+    "title": "Towards Trustworthy Decision Making in Visual Analytics"
+  },
+  {
+    "number": 330,
+    "name": "Marius Hogräfer",
+    "supervisors": "Hans-Jörg Schulz",
+    "date_raw": "16-01-2023",
+    "date": "2023-01-16",
+    "year": 2023,
+    "title": "Contributions towards Improving the Usefulness of Partial Visualizations"
+  },
+  {
+    "number": 331,
+    "name": "Sai Rahul Rachuri",
+    "supervisors": "Peter Scholl",
+    "date_raw": "25-01-2023",
+    "date": "2023-01-25",
+    "year": 2023,
+    "title": "Practical Multiparty Computation: Approaches to Private Machine Learning"
+  },
+  {
+    "number": 332,
+    "name": "Søren Eller Thomsen",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "14-03-2023",
+    "date": "2023-03-14",
+    "year": 2023,
+    "title": "Message Dissemination in the Nakamoto Era"
+  },
+  {
+    "number": 333,
+    "name": "Simon Oddershede Gregersen",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "17-03-2023",
+    "date": "2023-03-17",
+    "year": 2023,
+    "title": "Higher-Order Separation Logic for Distributed Systems and Security"
+  },
+  {
+    "number": 334,
+    "name": "Karl-Emil Kjær Bilstrup",
+    "supervisors": "Marianne Graves",
+    "date_raw": "21-03-2023",
+    "date": "2023-03-21",
+    "year": 2023,
+    "title": "Embodied Computational Empowerment"
+  },
+  {
+    "number": 335,
+    "name": "Magnus Høholt Kaspersen",
+    "supervisors": "Marianne Graves",
+    "date_raw": "30-03-2023",
+    "date": "2023-03-30",
+    "year": 2023,
+    "title": "AI EDUCATION THAT MATTERS -- Designing Computationally Empowering Learning Tools for Machine Learning"
+  },
+  {
+    "number": 336,
+    "name": "Benjamin Salling Hvass",
+    "supervisors": "Diego Aranha",
+    "date_raw": "12-04-2023",
+    "date": "2023-04-12",
+    "year": 2023,
+    "title": "Foundational Verification of Cryptographic Primitives"
+  },
+  {
+    "number": 337,
+    "name": "Aïna Linn Georges",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "16-06-2023",
+    "date": "2023-06-16",
+    "year": 2023,
+    "title": "Designing and Proving Robust Safety of Efficient Capability Machine Programs"
+  },
+  {
+    "number": 338,
+    "name": "Joao Marcelo Evangelista Belo",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "28-06-2023",
+    "date": "2023-06-28",
+    "year": 2023,
+    "title": "Context-Aware Adaptive User Interfaces for Mixed Reality"
+  },
+  {
+    "number": 339,
+    "name": "Oskar Haarklou Veileborg",
+    "supervisors": "Anders Møller",
+    "date_raw": "29-06-2023",
+    "date": "2023-06-29",
+    "year": 2023,
+    "title": "Localized Static Program Analysis for Optimization and Error Detection"
+  },
+  {
+    "number": 340,
+    "name": "Kasper Høgh",
+    "supervisors": "Kristoffer Arnsfelt Hansen",
+    "date_raw": "31-08-2023",
+    "date": "2023-08-31",
+    "year": 2023,
+    "title": "Complexity of Total Search: Equilibria and Fair Division"
+  },
+  {
+    "number": 341,
+    "name": "Nikolaj Ignatieff Schwartzbach",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "26-09-2023",
+    "date": "2023-09-26",
+    "year": 2023,
+    "title": "Smart Contracts and Rationality"
+  },
+  {
+    "number": 342,
+    "name": "Abel Nieto Rodriguez",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "28-09-2023",
+    "date": "2023-09-28",
+    "year": 2023,
+    "title": "Conflict-free Replicated Data Types have Abstract Data Type"
+  },
+  {
+    "number": 343,
+    "name": "Pingan Cheng",
+    "supervisors": "Peyman Afshani",
+    "date_raw": "13-10-2023",
+    "date": "2023-10-13",
+    "year": 2023,
+    "title": "On Geometric Range Searching and Its Variants"
+  },
+  {
+    "number": 344,
+    "name": "Irfansha Shaik",
+    "supervisors": "Jaco van de Pol",
+    "date_raw": "25-10-2023",
+    "date": "2023-10-25",
+    "year": 2023,
+    "title": "Concise Encodings for Planning and 2-Player Games"
+  },
+  {
+    "number": 345,
+    "name": "Daniel Gratzer",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "27-10-2023",
+    "date": "2023-10-27",
+    "year": 2023,
+    "title": "Syntax and semantics of modal type theory"
+  },
+  {
+    "number": 346,
+    "name": "Alexander Munch-Hansen",
+    "supervisors": "Peter Scholl",
+    "date_raw": "16-11-2023",
+    "date": "2023-11-16",
+    "year": 2023,
+    "title": "Quattro Formaggi: Zero-Knowledge from VOLE"
+  },
+  {
+    "number": 347,
+    "name": "Simon Friis Vindum",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "15-12-2023",
+    "date": "2023-12-15",
+    "year": 2023,
+    "title": "Separation Logic for Concurrency and Persistency"
+  },
+  {
+    "number": 348,
+    "name": "Jeppe Fredsgaard Blaabjerg",
+    "supervisors": "Aslan Askarov",
+    "date_raw": "18-01-2024",
+    "date": "2024-01-18",
+    "year": 2024,
+    "title": "Information Flow Techniques for Mitigating Traffic Analysis"
+  },
+  {
+    "number": 349,
+    "name": "Mathias Nørup Hall-Andersen",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "21-03-2024",
+    "date": "2024-03-21",
+    "year": 2024,
+    "title": "Either/Or"
+  },
+  {
+    "number": 350,
+    "name": "Mahak Rakesh Pancholi",
+    "supervisors": "Claudio Orlandi",
+    "date_raw": "12-04-2024",
+    "date": "2024-04-12",
+    "year": 2024,
+    "title": "Beyond Knowledge Soundness of SNARKs"
+  },
+  {
+    "number": 351,
+    "name": "Mille Skovhus Lunding",
+    "supervisors": "Marianne Graves Petersen",
+    "date_raw": "17-05-2024",
+    "date": "2024-05-17",
+    "year": 2024,
+    "title": "Bringing Augmented Reality to the Computational Thinking Agenda"
+  },
+  {
+    "number": 352,
+    "name": "Damiano Abram",
+    "supervisors": "Peter Scholl",
+    "date_raw": "10-06-2024",
+    "date": "2024-06-10",
+    "year": 2024,
+    "title": "Distributed (Correlation) Samplers - A Study on the Round Complexity of Cryptographic Sampling Protocols"
+  },
+  {
+    "number": 353,
+    "name": "Philipp Stassen",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "09-08-2024",
+    "date": "2024-08-09",
+    "year": 2024,
+    "title": "Programming language semantics in modal type theories"
+  },
+  {
+    "number": 354,
+    "name": "Lennart Braun",
+    "supervisors": "Ivan Damgård",
+    "date_raw": "05-09-2024",
+    "date": "2024-09-05",
+    "year": 2024,
+    "title": "Cryptography After PrimeTime - - Protocols for Z2k and Groups of Unknown Order"
+  },
+  {
+    "number": 355,
+    "name": "Andrew Draganov",
+    "supervisors": "Chris Schwiegelshohn",
+    "date_raw": "04-11-2024",
+    "date": "2024-11-04",
+    "year": 2024,
+    "title": "Bridging the Gap Between Theory and Practice in Unsupervised Learning"
+  },
+  {
+    "number": 356,
+    "name": "Atefeh Moradan",
+    "supervisors": "Ira Assent",
+    "date_raw": "08-11-2024",
+    "date": "2024-11-08",
+    "year": 2024,
+    "title": "On the Expressiveness of Community Detection in Complex Networks"
+  },
+  {
+    "number": 357,
+    "name": "Wenyue Ma",
+    "supervisors": "Panagiotis Karras",
+    "date_raw": "29-11-2024",
+    "date": "2024-11-29",
+    "year": 2024,
+    "title": "Fairness-aware Graph Mining"
+  },
+  {
+    "number": 358,
+    "name": "Simon Holmgaard Kamp",
+    "supervisors": "Jesper Buus Nielsen",
+    "date_raw": "20-01-2025",
+    "date": "2025-01-20",
+    "year": 2025,
+    "title": "Towards Scalable and Robust Distributed Computing"
+  },
+  {
+    "number": 359,
+    "name": "Hünkar Can Tunc",
+    "supervisors": "Andreas Pavlogiannis",
+    "date_raw": "07-02-2025",
+    "date": "2025-02-07",
+    "year": 2025,
+    "title": "Efficient Data Structures and Algorithms for Dynamic Analysis of Concurrent Programs"
+  },
+  {
+    "number": 360,
+    "name": "Zhile Jiang",
+    "supervisors": "Iannis Carragiannis",
+    "date_raw": "07-02-2025",
+    "date": "2025-02-07",
+    "year": 2025,
+    "title": "Randomness in structures and computation"
+  },
+  {
+    "number": 361,
+    "name": "Rasmus Skovhus Lunding",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "14-02-2025",
+    "date": "2025-02-14",
+    "year": 2025,
+    "title": "Augmented Reality assisted Human-Robot Collaboration: A novel approach to efficient, adaptive, and flexible human-robot collaboration"
+  },
+  {
+    "number": 362,
+    "name": "Nikolaos Melissaris",
+    "supervisors": "Peter Scholl",
+    "date_raw": "18-02-2025",
+    "date": "2025-02-18",
+    "year": 2025,
+    "title": "Better, Faster, Stronger – Improving Security, Efficiency, and Primitives for MPC"
+  },
+  {
+    "number": 363,
+    "name": "Chiwoong Hwang",
+    "supervisors": "Kaj Grønbæk",
+    "date_raw": "25-02-2025",
+    "date": "2025-02-25",
+    "year": 2025,
+    "title": "Haptic Interaction for Industrial Training in Virtual Reality - Enhancing the Perception of Physical Properties and User Experience"
+  },
+  {
+    "number": 364,
+    "name": "Uta Wagner",
+    "supervisors": "Hans Gellersen",
+    "date_raw": "27-02-2025",
+    "date": "2025-02-27",
+    "year": 2025,
+    "title": "Eye-Hand Input in 3D"
+  },
+  {
+    "number": 365,
+    "name": "Petros Petsinis",
+    "supervisors": "Panagiotis Karras",
+    "date_raw": "07-03-2025",
+    "date": "2025-03-07",
+    "year": 2025,
+    "title": "Combinatorial Optimization for Diffusion and Search in Graphs"
+  },
+  {
+    "number": 366,
+    "name": "Karl Fehrs",
+    "supervisors": "Ioannis Caragiannis",
+    "date_raw": "11-04-2025",
+    "date": "2025-04-11",
+    "year": 2025,
+    "title": "Optimization and Learning in Voting"
+  },
+  {
+    "number": 367,
+    "name": "Fatemeh Zardbani",
+    "supervisors": "Panagiotis Karras",
+    "date_raw": "25-04-2025",
+    "date": "2025-04-25",
+    "year": 2025,
+    "title": "Incremental Management of Multi-dimensional Data"
+  },
+  {
+    "number": 368,
+    "name": "Katrine Scheel Killmann",
+    "supervisors": "Ira Assent",
+    "date_raw": "30-04-2025",
+    "date": "2025-04-30",
+    "year": 2025,
+    "title": "Fast (Correct) Clustering in Time and Space using the GPU"
+  },
+  {
+    "number": 369,
+    "name": "Zonguan Liu",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "30-04-2025",
+    "date": "2025-04-30",
+    "year": 2025,
+    "title": "Separation Logic for Low-level and Realistic Programs"
+  },
+  {
+    "number": 370,
+    "name": "Steffan Sølvsten",
+    "supervisors": "Jaco van de Pol",
+    "date_raw": "15-05-2025",
+    "date": "2025-05-15",
+    "year": 2025,
+    "title": "I/O-efficient Symbolic Model Checking"
+  },
+  {
+    "number": 371,
+    "name": "Georgian-Vlad Saioc",
+    "supervisors": "Anders Møller",
+    "date_raw": "06-06-2025",
+    "date": "2025-06-06",
+    "year": 2025,
+    "title": "Program Analysis Techniques for Detecting and Preventing Partial Deadlocks"
+  },
+  {
+    "number": "",
+    "name": "",
+    "supervisors": "",
+    "date_raw": "",
+    "date": null,
+    "year": null,
+    "title": ""
+  },
+  {
+    "number": "",
+    "name": "",
+    "supervisors": "",
+    "date_raw": "",
+    "date": null,
+    "year": null,
+    "title": ""
+  },
+  {
+    "number": "",
+    "name": "",
+    "supervisors": "",
+    "date_raw": "",
+    "date": null,
+    "year": null,
+    "title": ""
+  }
+]
