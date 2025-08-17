@@ -262,6 +262,35 @@ def generate_html(analysis_data):
             font-weight: bold;
             margin-left: 0.5rem;
         }}
+        .navbar {{
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }}
+        .navbar-item.is-active {{
+            background: #667eea;
+            color: white !important;
+            border-radius: 4px;
+            margin: 0.25rem;
+        }}
+        .navbar-item {{
+            margin: 0.25rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }}
+        .navbar-item:hover {{
+            background: #f5f5f5;
+        }}
+        .navbar-item.is-active:hover {{
+            background: #667eea;
+        }}
+        @media screen and (max-width: 1023px) {{
+            .navbar-menu {{
+                box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                margin-top: 0.5rem;
+            }}
+        }}
     </style>
 </head>
 <body>
@@ -295,35 +324,37 @@ def generate_html(analysis_data):
 
         <section class="section">
             <div class="container">
-                <!-- Navigation Tabs -->
-                <div class="tabs is-centered is-boxed is-large">
-                    <ul>
-                        <li :class="{{'is-active': activeTab === 'first'}}">
-                            <a @click="activeTab = 'first'">
+                <!-- Navigation Navbar -->
+                <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a role="button" class="navbar-burger" :class="{{'is-active': mobileMenuOpen}}" @click="toggleMobileMenu()">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div class="navbar-menu" :class="{{'is-active': mobileMenuOpen}}">
+                        <div class="navbar-start">
+                            <a class="navbar-item" :class="{{'is-active': activeTab === 'first'}}" @click="setActiveTab('first')">
                                 <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
                                 <span>Første ph.d.'er</span>
                             </a>
-                        </li>
-                        <li :class="{{'is-active': activeTab === 'supervisors'}}">
-                            <a @click="activeTab = 'supervisors'">
+                            <a class="navbar-item" :class="{{'is-active': activeTab === 'supervisors'}}" @click="setActiveTab('supervisors')">
                                 <span class="icon"><i class="fas fa-user-tie"></i></span>
                                 <span>Flittige vejledere</span>
                             </a>
-                        </li>
-                        <li :class="{{'is-active': activeTab === 'chains'}}">
-                            <a @click="activeTab = 'chains'">
+                            <a class="navbar-item" :class="{{'is-active': activeTab === 'chains'}}" @click="setActiveTab('chains')">
                                 <span class="icon"><i class="fas fa-link"></i></span>
                                 <span>Lange kæder</span>
                             </a>
-                        </li>
-                        <li :class="{{'is-active': activeTab === 'descendants'}}">
-                            <a @click="activeTab = 'descendants'">
+                            <a class="navbar-item" :class="{{'is-active': activeTab === 'descendants'}}" @click="setActiveTab('descendants')">
                                 <span class="icon"><i class="fas fa-sitemap"></i></span>
                                 <span>Stamtræer</span>
                             </a>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </div>
+                </nav>
 
                 <!-- Content -->
                 <transition name="fade" mode="out-in">
@@ -471,6 +502,7 @@ def generate_html(analysis_data):
             data() {{
                 return {{
                     activeTab: 'first',
+                    mobileMenuOpen: false,
                     stats: {json.dumps(analysis_data['stats'])},
                     firstPhds: {json.dumps([{
                         'name': p['name'],
@@ -488,6 +520,14 @@ def generate_html(analysis_data):
                         'descendants': count
                     } for name, count in analysis_data['top_descendants']])},
                     generatedDate: '{datetime.now().strftime('%d-%m-%Y %H:%M')}'
+                }},
+            methods: {{
+                toggleMobileMenu() {{
+                    this.mobileMenuOpen = !this.mobileMenuOpen;
+                }},
+                setActiveTab(tab) {{
+                    this.activeTab = tab;
+                    this.mobileMenuOpen = false;
                 }}
             }}
         }}).mount('#app');

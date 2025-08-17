@@ -86,6 +86,35 @@
             font-weight: bold;
             margin-left: 0.5rem;
         }
+        .navbar {
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .navbar-item.is-active {
+            background: #667eea;
+            color: white !important;
+            border-radius: 4px;
+            margin: 0.25rem;
+        }
+        .navbar-item {
+            margin: 0.25rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .navbar-item:hover {
+            background: #f5f5f5;
+        }
+        .navbar-item.is-active:hover {
+            background: #667eea;
+        }
+        @media screen and (max-width: 1023px) {
+            .navbar-menu {
+                box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                margin-top: 0.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -119,35 +148,37 @@
 
         <section class="section">
             <div class="container">
-                <!-- Navigation Tabs -->
-                <div class="tabs is-centered is-boxed is-large">
-                    <ul>
-                        <li :class="{'is-active': activeTab === 'first'}">
-                            <a @click="activeTab = 'first'">
+                <!-- Navigation Navbar -->
+                <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a role="button" class="navbar-burger" :class="{'is-active': mobileMenuOpen}" @click="toggleMobileMenu()">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div class="navbar-menu" :class="{'is-active': mobileMenuOpen}">
+                        <div class="navbar-start">
+                            <a class="navbar-item" :class="{'is-active': activeTab === 'first'}" @click="setActiveTab('first')">
                                 <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
                                 <span>Første ph.d.'er</span>
                             </a>
-                        </li>
-                        <li :class="{'is-active': activeTab === 'supervisors'}">
-                            <a @click="activeTab = 'supervisors'">
+                            <a class="navbar-item" :class="{'is-active': activeTab === 'supervisors'}" @click="setActiveTab('supervisors')">
                                 <span class="icon"><i class="fas fa-user-tie"></i></span>
                                 <span>Flittige vejledere</span>
                             </a>
-                        </li>
-                        <li :class="{'is-active': activeTab === 'chains'}">
-                            <a @click="activeTab = 'chains'">
+                            <a class="navbar-item" :class="{'is-active': activeTab === 'chains'}" @click="setActiveTab('chains')">
                                 <span class="icon"><i class="fas fa-link"></i></span>
                                 <span>Lange kæder</span>
                             </a>
-                        </li>
-                        <li :class="{'is-active': activeTab === 'descendants'}">
-                            <a @click="activeTab = 'descendants'">
+                            <a class="navbar-item" :class="{'is-active': activeTab === 'descendants'}" @click="setActiveTab('descendants')">
                                 <span class="icon"><i class="fas fa-sitemap"></i></span>
                                 <span>Stamtræer</span>
                             </a>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </div>
+                </nav>
 
                 <!-- Content -->
                 <transition name="fade" mode="out-in">
@@ -295,12 +326,21 @@
             data() {
                 return {
                     activeTab: 'first',
+                    mobileMenuOpen: false,
                     stats: {"total_phds": 373, "total_supervisors": 68, "year_span": "1975-2025"},
                     firstPhds: [{"name": "Sven Skyum", "year": 1975, "title": "Parallelisme i definitioner af sprog", "supervisors": "Arto Salomaa"}, {"name": "Mogens Nielsen", "year": 1976, "title": "Some results on context-free Lindenmayer systems", "supervisors": "Arto Salomaa"}, {"name": "Kurt Jensen", "year": 1980, "title": "Net theory - adequacy and applications in language theory", "supervisors": "Erik Meineche Schmidt"}, {"name": "Ole Lehrmann", "year": 1980, "title": "Anvendelse af attribut-overs\u00e6ttelsesskemaer i realisation af sprogdefinitioner i alternative formalismer", "supervisors": "Peter Kornerup"}, {"name": "Leo Mark Christensen", "year": 1985, "title": "Self Describing Database Systems", "supervisors": "Brian H. Mayoh"}, {"name": "Gudmund Frandsen", "year": 1986, "title": "Semantik af logikprogrammering", "supervisors": "Mogens Nielsen"}, {"name": "J\u00f8rgen Lindskov Knudsen", "year": 1986, "title": "Underst\u00f8ttelse af undtagelsesh\u00e5ndtering i programmeringssprog", "supervisors": "Ole Lehrmann Madsen"}, {"name": "Andreas Munk-Madsen", "year": 1987, "title": "Vurdering af systemudviklingsprojekter", "supervisors": "Morten Kyng"}, {"name": "Kristine Stougaard Thomsen", "year": 1987, "title": "Underst\u00f8ttelse af nedarvning i programmeringssprog", "supervisors": "Ole Lehrmann Madsen"}, {"name": "Kurt N\u00f8rmark", "year": 1987, "title": "Transformationer og abstrakte pr\u00e6sentationer i en sprogudviklingsomgivelse", "supervisors": "Ole Lehrmann Madsen"}],
                     topSupervisors: [{"name": "Ivan Bjerre Damg\u00e5rd", "count": 36}, {"name": "Kaj Gr\u00f8nb\u00e6k", "count": 26}, {"name": "Mogens Nielsen", "count": 18}, {"name": "Ole Lehrmann Madsen", "count": 17}, {"name": "Olivier Danvy", "count": 17}, {"name": "Susanne B\u00f8dker", "count": 15}, {"name": "Peter Bro Miltersen", "count": 15}, {"name": "Anders M\u00f8ller", "count": 14}, {"name": "Gerth St\u00f8lting Brodal", "count": 13}, {"name": "Lars Birkedal", "count": 13}],
-                    longestChains: [{"path": ["Arto Salomaa", "Sven Skyum", "Peter Bro Miltersen", "Kristoffer Arnsfelt Hansen", "Kasper H\u00f8gh"], "years": [null, 1975, 1993, 2006, 2023], "length": 5}, {"path": ["Peter Landrock", "Ivan Bjerre Damg\u00e5rd", "Jesper Buus Nielsen", "Peter S. Nordholt"], "years": [null, 1988, 2003, 2013], "length": 4}, {"path": ["Peter Landrock", "Ivan Bjerre Damg\u00e5rd", "Jesper Buus Nielsen", "Angela Zottarel"], "years": [null, 1988, 2003, 2014], "length": 4}, {"path": ["Peter Landrock", "Ivan Bjerre Damg\u00e5rd", "Jesper Buus Nielsen", "Pavel Hubacek"], "years": [null, 1988, 2003, 2014], "length": 4}, {"path": ["Peter Landrock", "Ivan Bjerre Damg\u00e5rd", "Jesper Buus Nielsen", "Thomas P Jakobsen"], "years": [null, 1988, 2003, 2015], "length": 4}],
+                    longestChains: [{"path": ["Arto Salomaa", "Sven Skyum", "Peter Bro Miltersen", "Kristoffer Arnsfelt Hansen", "Kasper H\u00f8gh"], "years": [null, 1975, 1993, 2006, 2023], "length": 5}, {"path": ["Ole Lehrmann Madsen", "Klaus Marius Hansen", "Mikkel Baun Kj\u00e6rgaard", "Thor Siiger Prentow"], "years": [null, 2002, 2008, 2015], "length": 4}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Marianne Graves", "Karl-Emil Kj\u00e6r Bilstrup"], "years": [null, 1987, 2003, 2023], "length": 4}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Marianne Graves", "Magnus H\u00f8holt Kaspersen"], "years": [null, 1987, 2003, 2023], "length": 4}, {"path": ["Morten Kyng", "Susanne B\u00f8dker", "Clemens Nylandsted Klokmose", "Marcel Borowski"], "years": [null, 1987, 2009, 2022], "length": 4}],
                     topDescendants: [{"name": "Morten Kyng", "descendants": 54}, {"name": "Peter Landrock", "descendants": 52}, {"name": "Ivan Bjerre Damg\u00e5rd", "descendants": 51}, {"name": "Arto Salomaa", "descendants": 50}, {"name": "Erik Meineche Schmidt", "descendants": 45}, {"name": "Sven Skyum", "descendants": 29}, {"name": "Kaj Gr\u00f8nb\u00e6k", "descendants": 29}, {"name": "Ole Lehrmann Madsen", "descendants": 24}, {"name": "Michael I. Schwartzbach", "descendants": 22}, {"name": "Mogens Nielsen", "descendants": 19}],
-                    generatedDate: '17-08-2025 11:51'
+                    generatedDate: '17-08-2025 11:54'
+                },
+            methods: {
+                toggleMobileMenu() {
+                    this.mobileMenuOpen = !this.mobileMenuOpen;
+                },
+                setActiveTab(tab) {
+                    this.activeTab = tab;
+                    this.mobileMenuOpen = false;
                 }
             }
         }).mount('#app');
