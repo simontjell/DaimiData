@@ -179,7 +179,7 @@ def generate_html(analysis_data):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daimidata.dk</title>
+    <title>daimi.dk</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
@@ -262,33 +262,43 @@ def generate_html(analysis_data):
             font-weight: bold;
             margin-left: 0.5rem;
         }}
-        .navbar {{
-            border-radius: 8px;
+        .tabs {{
             margin-bottom: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }}
-        .navbar-item.is-active {{
+        .tabs.is-boxed li.is-active a {{
             background: #667eea;
-            color: white !important;
-            border-radius: 4px;
-            margin: 0.25rem;
+            color: white;
+            border-color: #667eea;
         }}
-        .navbar-item {{
-            margin: 0.25rem;
-            border-radius: 4px;
-            transition: background 0.3s;
+        .tabs.is-boxed a {{
+            border: 1px solid #dbdbdb;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s;
         }}
-        .navbar-item:hover {{
+        .tabs.is-boxed a:hover {{
             background: #f5f5f5;
+            border-color: #b5b5b5;
         }}
-        .navbar-item.is-active:hover {{
+        .tabs.is-boxed li.is-active a:hover {{
             background: #667eea;
+            border-color: #667eea;
         }}
-        @media screen and (max-width: 1023px) {{
-            .navbar-menu {{
-                box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-                border-radius: 8px;
-                margin-top: 0.5rem;
+        @media screen and (max-width: 1000px) {{
+            .tabs.is-centered {{
+                justify-content: flex-start;
+            }}
+            .tabs ul {{
+                flex-direction: column;
+                width: 100%;
+            }}
+            .tabs li {{
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }}
+            .tabs.is-boxed a {{
+                border-radius: 4px;
+                justify-content: flex-start;
+                padding-left: 1rem;
             }}
         }}
     </style>
@@ -324,37 +334,35 @@ def generate_html(analysis_data):
 
         <section class="section">
             <div class="container">
-                <!-- Navigation Navbar -->
-                <nav class="navbar is-light" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <a role="button" class="navbar-burger" :class="{{'is-active': mobileMenuOpen}}" @click="toggleMobileMenu()">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
-                    </div>
-
-                    <div class="navbar-menu" :class="{{'is-active': mobileMenuOpen}}">
-                        <div class="navbar-start">
-                            <a class="navbar-item" :class="{{'is-active': activeTab === 'first'}}" @click="setActiveTab('first')">
+                <!-- Navigation Tabs -->
+                <div class="tabs is-centered is-boxed is-large">
+                    <ul>
+                        <li :class="{{'is-active': activeTab === 'first'}}">
+                            <a @click="activeTab = 'first'">
                                 <span class="icon"><i class="fas fa-clock-rotate-left"></i></span>
                                 <span>Første ph.d.'er</span>
                             </a>
-                            <a class="navbar-item" :class="{{'is-active': activeTab === 'supervisors'}}" @click="setActiveTab('supervisors')">
+                        </li>
+                        <li :class="{{'is-active': activeTab === 'supervisors'}}">
+                            <a @click="activeTab = 'supervisors'">
                                 <span class="icon"><i class="fas fa-user-tie"></i></span>
                                 <span>Flittige vejledere</span>
                             </a>
-                            <a class="navbar-item" :class="{{'is-active': activeTab === 'chains'}}" @click="setActiveTab('chains')">
+                        </li>
+                        <li :class="{{'is-active': activeTab === 'chains'}}">
+                            <a @click="activeTab = 'chains'">
                                 <span class="icon"><i class="fas fa-link"></i></span>
                                 <span>Lange kæder</span>
                             </a>
-                            <a class="navbar-item" :class="{{'is-active': activeTab === 'descendants'}}" @click="setActiveTab('descendants')">
+                        </li>
+                        <li :class="{{'is-active': activeTab === 'descendants'}}">
+                            <a @click="activeTab = 'descendants'">
                                 <span class="icon"><i class="fas fa-sitemap"></i></span>
                                 <span>Stamtræer</span>
                             </a>
-                        </div>
-                    </div>
-                </nav>
+                        </li>
+                    </ul>
+                </div>
 
                 <!-- Content -->
                 <transition name="fade" mode="out-in">
@@ -485,7 +493,7 @@ def generate_html(analysis_data):
         <footer class="footer">
             <div class="content has-text-centered" id="about">
                 <p>
-                    <strong>DaimiData.dk er udviklet af <a href>simplesystemer.dk</a> v/Simon Tjell (Daimi-ph.d. #169)</strong> 
+                    <strong>daimi.dk er udviklet af <a href>simplesystemer.dk</a> v/Simon Tjell (Daimi-ph.d. #169)</strong> 
                     <br>
                     på baggrund af <a href="https://cs.au.dk/education/phd/phds-produced/">data</a> fra Datalogisk Institut, Aarhus Universitet
                     <br>
@@ -502,7 +510,6 @@ def generate_html(analysis_data):
             data() {{
                 return {{
                     activeTab: 'first',
-                    mobileMenuOpen: false,
                     stats: {json.dumps(analysis_data['stats'])},
                     firstPhds: {json.dumps([{
                         'name': p['name'],
@@ -520,15 +527,6 @@ def generate_html(analysis_data):
                         'descendants': count
                     } for name, count in analysis_data['top_descendants']])},
                     generatedDate: '{datetime.now().strftime('%d-%m-%Y %H:%M')}'
-                }}
-            }},
-            methods: {{
-                toggleMobileMenu() {{
-                    this.mobileMenuOpen = !this.mobileMenuOpen;
-                }},
-                setActiveTab(tab) {{
-                    this.activeTab = tab;
-                    this.mobileMenuOpen = false;
                 }}
             }}
         }}).mount('#app');
