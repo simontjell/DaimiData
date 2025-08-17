@@ -27,7 +27,8 @@ def normalize_name(name):
         'Ivan Damgård': 'Ivan Bjerre Damgård',
         'Gerth S. Brodal': 'Gerth Stølting Brodal',
         'Peter Mosses': 'Peter D. Mosses',
-        'Michael Schwartzbach': 'Michael I. Schwartzbach'
+        'Michael Schwartzbach': 'Michael I. Schwartzbach',
+        'Marianne Graves': 'Marianne Graves Petersen',
     }
     return name_map.get(name, name)
 
