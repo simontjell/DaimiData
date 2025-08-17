@@ -122,6 +122,34 @@ def find_all_descendants(person, supervision_graph, visited=None):
     
     return descendants
 
+def build_family_tree(root_supervisor, supervision_graph, max_depth=3):
+    """Build hierarchical family tree for visualization"""
+    
+    def build_tree_recursive(person, depth=0):
+        if depth >= max_depth or person not in supervision_graph:
+            return None
+            
+        children = []
+        for student in supervision_graph[person]:
+            student_name = student['name'] if isinstance(student, dict) else student
+            student_year = student['year'] if isinstance(student, dict) else None
+            
+            child_tree = build_tree_recursive(normalize_name(student_name), depth + 1)
+            child_node = {
+                'name': student_name,
+                'year': student_year,
+                'children': child_tree['children'] if child_tree else []
+            }
+            children.append(child_node)
+        
+        return {
+            'name': person,
+            'year': None,
+            'children': children
+        }
+    
+    return build_tree_recursive(root_supervisor)
+
 def analyze_data(phd_data):
     """Analyze PhD data and generate all required statistics"""
     
@@ -159,11 +187,23 @@ def analyze_data(phd_data):
     
     top_descendants = sorted(supervisor_descendants.items(), key=lambda x: x[1], reverse=True)[:10]
     
+    # 5. Build family trees for top 5 supervisors
+    family_trees = []
+    for supervisor, descendants_count in top_descendants[:5]:
+        tree = build_family_tree(supervisor, supervision_graph, max_depth=3)
+        if tree and tree['children']:
+            family_trees.append({
+                'root': supervisor,
+                'descendants': descendants_count,
+                'tree': tree
+            })
+    
     return {
         'first_phds': first_phds,
         'top_supervisors': top_supervisors,
         'longest_chains': longest_chains,
         'top_descendants': top_descendants,
+        'family_trees': family_trees,
         'stats': {
             'total_phds': len(phd_data),
             'total_supervisors': len(supervisor_counts),
@@ -300,6 +340,74 @@ def generate_html(analysis_data):
                 justify-content: flex-start;
                 padding-left: 1rem;
             }}
+        }}
+        .family-tree {{
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }}
+        .tree-hierarchy {{
+            font-family: 'Courier New', monospace;
+            line-height: 1.8;
+            font-size: 0.9rem;
+        }}
+        .tree-root {{
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }}
+        .tree-level-1 {{
+            margin-left: 2rem;
+            position: relative;
+        }}
+        .tree-level-1::before {{
+            content: '├── ';
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: -1.5rem;
+        }}
+        .tree-level-1:last-child::before {{
+            content: '└── ';
+        }}
+        .tree-level-2 {{
+            margin-left: 4rem;
+            position: relative;
+            color: #6c757d;
+        }}
+        .tree-level-2::before {{
+            content: '├── ';
+            color: #adb5bd;
+            position: absolute;
+            left: -1.5rem;
+        }}
+        .tree-level-2:last-child::before {{
+            content: '└── ';
+        }}
+        .person-name {{
+            font-weight: 600;
+            color: #495057;
+        }}
+        .person-year {{
+            color: #6c757d;
+            font-weight: normal;
+            margin-left: 0.5rem;
+        }}
+        .descendants-count {{
+            background: #e94560;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
         }}
     </style>
 </head>
@@ -456,32 +564,63 @@ def generate_html(analysis_data):
                     <div v-else-if="activeTab === 'descendants'" key="descendants">
                         <h2 class="title is-3 has-text-centered mb-5">
                             <span class="icon"><i class="fas fa-sitemap"></i></span>
-                            De 10 største akademiske stamtræer
+                            Akademiske stamtræer
                         </h2>
                         <div class="content has-text-centered mb-5">
                             <p class="subtitle is-6">
-                                Akademiske familier - vejledere med det største samlede antal efterkommere gennem alle generationer.
-                                Inkluderer både direkte studerende og deres efterfølgende ph.d.-studerende.
+                                Visualisering af de største akademiske familier med deres hierarkiske strukturer.
+                                Viser vejleder-studerende relationer gennem generationer.
                             </p>
                         </div>
-                        <div class="columns is-multiline">
-                            <div v-for="(supervisor, index) in topDescendants" :key="index" class="column is-12">
-                                <div class="box">
-                                    <div class="level">
-                                        <div class="level-left">
-                                            <div>
-                                                <span class="rank-badge">#{{{{ index + 1 }}}}</span>
-                                                <span class="title is-4">{{{{ supervisor.name }}}}</span>
-                                            </div>
-                                        </div>
-                                        <div class="level-right">
-                                            <div class="has-text-centered">
-                                                <p class="heading">Efterkommere</p>
-                                                <p class="title is-2 has-text-primary">{{{{ supervisor.descendants }}}}</p>
-                                            </div>
+                        
+                        <!-- Family Trees Visualization -->
+                        <div v-for="(familyTree, index) in familyTrees" :key="index" class="family-tree">
+                            <div class="level mb-4">
+                                <div class="level-left">
+                                    <div>
+                                        <span class="rank-badge">#{{{{ index + 1 }}}}</span>
+                                        <span class="title is-4">{{{{ familyTree.root }}}}</span>
+                                        <span class="descendants-count">{{{{ familyTree.descendants }}}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Tree Hierarchy -->
+                            <div class="tree-hierarchy">
+                                <div class="tree-root">
+                                    {{{{ familyTree.tree.name }}}}
+                                </div>
+                                
+                                <div v-for="(child, childIndex) in familyTree.tree.children" :key="child.name" 
+                                     :class="childIndex === familyTree.tree.children.length - 1 ? 'tree-level-1' : 'tree-level-1'">
+                                    <span class="person-name">{{{{ child.name }}}}</span>
+                                    <span v-if="child.year" class="person-year">({{{{ child.year }}}})</span>
+                                    
+                                    <div v-if="child.children && child.children.length > 0">
+                                        <div v-for="(grandchild, grandIndex) in child.children" :key="grandchild.name"
+                                             :class="grandIndex === child.children.length - 1 ? 'tree-level-2' : 'tree-level-2'">
+                                            <span class="person-name">{{{{ grandchild.name }}}}</span>
+                                            <span v-if="grandchild.year" class="person-year">({{{{ grandchild.year }}}})</span>
                                         </div>
                                     </div>
-                                    <div class="descendants-bar" :style="{{width: (supervisor.descendants / topDescendants[0].descendants * 100) + '%'}}"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Summary Statistics -->
+                        <div class="box mt-5">
+                            <h3 class="title is-5 mb-4">Top 10 vejledere efter antal efterkommere</h3>
+                            <div class="columns is-multiline">
+                                <div v-for="(supervisor, index) in topDescendants" :key="index" class="column is-6">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <span class="rank-badge">#{{{{ index + 1 }}}}</span>
+                                            <span class="has-text-weight-semibold">{{{{ supervisor.name }}}}</span>
+                                        </div>
+                                        <div class="level-right">
+                                            <span class="tag is-primary">{{{{ supervisor.descendants }}}} efterkommere</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -526,6 +665,7 @@ def generate_html(analysis_data):
                         'name': name,
                         'descendants': count
                     } for name, count in analysis_data['top_descendants']])},
+                    familyTrees: {json.dumps(analysis_data['family_trees'])},
                     generatedDate: '{datetime.now().strftime('%d-%m-%Y %H:%M')}'
                 }}
             }}
