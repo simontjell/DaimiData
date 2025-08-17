@@ -520,7 +520,8 @@ def generate_html(analysis_data):
                         'descendants': count
                     } for name, count in analysis_data['top_descendants']])},
                     generatedDate: '{datetime.now().strftime('%d-%m-%Y %H:%M')}'
-                }},
+                }}
+            }},
             methods: {{
                 toggleMobileMenu() {{
                     this.mobileMenuOpen = !this.mobileMenuOpen;
