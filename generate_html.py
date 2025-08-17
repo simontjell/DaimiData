@@ -350,8 +350,8 @@ def generate_html(analysis_data):
         }}
         .tree-hierarchy {{
             font-family: 'Courier New', monospace;
-            line-height: 1.8;
-            font-size: 0.9rem;
+            line-height: 1.1;
+            font-size: 0.8rem;
         }}
         .tree-root {{
             font-weight: bold;
@@ -359,36 +359,37 @@ def generate_html(analysis_data):
             font-size: 1.1rem;
             margin-bottom: 1rem;
         }}
-        .tree-level-1 {{
+        .tree-node {{
+            position: relative;
             margin-left: 2rem;
-            position: relative;
         }}
-        .tree-level-1::before {{
-            content: '├── ';
-            color: #667eea;
-            font-weight: bold;
-            position: absolute;
-            left: -1.5rem;
-        }}
-        .tree-level-1:last-child::before {{
-            content: '└── ';
-        }}
-        .tree-level-2 {{
-            margin-left: 4rem;
-            position: relative;
-            color: #6c757d;
-        }}
-        .tree-level-2::before {{
+        .tree-node::before {{
             content: '├── ';
             color: #adb5bd;
             position: absolute;
             left: -1.5rem;
         }}
-        .tree-level-2:last-child::before {{
+        .tree-node.is-last::before {{
             content: '└── ';
         }}
+        .tree-level-1::before {{
+            color: #667eea !important;
+            font-weight: bold;
+        }}
+        .tree-level-2 {{
+            color: #6c757d;
+        }}
+        .tree-level-3 {{
+            color: #868e96;
+        }}
+        .tree-level-4 {{
+            color: #9e9e9e;
+        }}
+        .tree-level-5 {{
+            color: #bdbdbd;
+        }}
         .person-name {{
-            font-weight: 600;
+            font-weight: 400;
             color: #495057;
         }}
         .person-year {{
@@ -580,30 +581,19 @@ def generate_html(analysis_data):
                                     <div>
                                         <span class="rank-badge">#{{{{ index + 1 }}}}</span>
                                         <span class="title is-4">{{{{ familyTree.root }}}}</span>
-                                        <span class="descendants-count">{{{{ familyTree.descendants }}}}</span>
+                                        <span class="descendants-count">{{{{ familyTree.descendants }}}}</span><span> efterkommere</span>
                                     </div>
                                 </div>
                             </div>
                             
                             <!-- Tree Hierarchy -->
                             <div class="tree-hierarchy">
-                                <div class="tree-root">
-                                    {{{{ familyTree.tree.name }}}}
-                                </div>
-                                
-                                <div v-for="(child, childIndex) in familyTree.tree.children" :key="child.name" 
-                                     :class="childIndex === familyTree.tree.children.length - 1 ? 'tree-level-1' : 'tree-level-1'">
-                                    <span class="person-name">{{{{ child.name }}}}</span>
-                                    <span v-if="child.year" class="person-year">({{{{ child.year }}}})</span>
-                                    
-                                    <div v-if="child.children && child.children.length > 0">
-                                        <div v-for="(grandchild, grandIndex) in child.children" :key="grandchild.name"
-                                             :class="grandIndex === child.children.length - 1 ? 'tree-level-2' : 'tree-level-2'">
-                                            <span class="person-name">{{{{ grandchild.name }}}}</span>
-                                            <span v-if="grandchild.year" class="person-year">({{{{ grandchild.year }}}})</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <tree-node v-for="(child, index) in familyTree.tree.children" 
+                                          :key="child.name" 
+                                          :node="child" 
+                                          :is-last="index === familyTree.tree.children.length - 1"
+                                          :level="1">
+                                </tree-node>
                             </div>
                         </div>
                         
@@ -645,7 +635,29 @@ def generate_html(analysis_data):
     <script>
         const {{ createApp }} = Vue;
         
+        const TreeNode = {{
+            name: 'TreeNode',
+            props: ['node', 'isLast', 'level'],
+            template: `
+                <div class="tree-node" :class="['tree-level-' + level, {{ 'is-last': isLast }}]">
+                    <span class="person-name">{{{{ node.name }}}}</span>
+                    <span v-if="node.year" class="person-year">({{{{ node.year }}}})</span>
+                    <div v-if="node.children && node.children.length > 0" class="tree-children">
+                        <tree-node v-for="(child, index) in node.children" 
+                                  :key="child.name" 
+                                  :node="child" 
+                                  :is-last="index === node.children.length - 1"
+                                  :level="level + 1">
+                        </tree-node>
+                    </div>
+                </div>
+            `
+        }};
+        
         createApp({{
+            components: {{
+                TreeNode
+            }},
             data() {{
                 return {{
                     activeTab: 'first',
