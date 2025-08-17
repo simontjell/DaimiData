@@ -307,19 +307,19 @@ def generate_html(analysis_data):
                         <li :class="{{'is-active': activeTab === 'supervisors'}}">
                             <a @click="activeTab = 'supervisors'">
                                 <span class="icon"><i class="fas fa-user-tie"></i></span>
-                                <span>Top Vejledere</span>
+                                <span>Flittige vejledere</span>
                             </a>
                         </li>
                         <li :class="{{'is-active': activeTab === 'chains'}}">
                             <a @click="activeTab = 'chains'">
                                 <span class="icon"><i class="fas fa-link"></i></span>
-                                <span>Længste Kæder</span>
+                                <span>Lange kæder</span>
                             </a>
                         </li>
                         <li :class="{{'is-active': activeTab === 'descendants'}}">
                             <a @click="activeTab = 'descendants'">
                                 <span class="icon"><i class="fas fa-sitemap"></i></span>
-                                <span>Flest Efterkommere</span>
+                                <span>Stamtræer</span>
                             </a>
                         </li>
                     </ul>
