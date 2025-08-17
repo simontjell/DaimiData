@@ -219,7 +219,31 @@ def generate_html(analysis_data):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daimi.dk</title>
+    <title>daimi.dk - Ph.d.-statistik for Datalogisk Institut</title>
+    
+    <!-- Open Graph / LinkedIn meta tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://daimi.dk">
+    <meta property="og:title" content="daimi.dk - Ph.d.-statistik for Datalogisk Institut">
+    <meta property="og:description" content="Interaktiv analyse af {analysis_data['stats']['total_phds']} ph.d.-afhandlinger fra Datalogisk Institut, Aarhus Universitet ({analysis_data['stats']['year_span']}). Udforsk akademiske stamtræer, vejlederkæder og statistikker.">
+    <meta property="og:image" content="https://daimi.dk/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ph.d.-statistik dashboard for Datalogisk Institut">
+    <meta property="og:site_name" content="daimi.dk">
+    <meta property="og:locale" content="da_DK">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://daimi.dk">
+    <meta name="twitter:title" content="daimi.dk - Ph.d.-statistik for Datalogisk Institut">
+    <meta name="twitter:description" content="Interaktiv analyse af {analysis_data['stats']['total_phds']} ph.d.-afhandlinger fra Datalogisk Institut, Aarhus Universitet ({analysis_data['stats']['year_span']}).">
+    <meta name="twitter:image" content="https://daimi.dk/og-image.png">
+    
+    <!-- Standard meta tags -->
+    <meta name="description" content="Interaktiv analyse af {analysis_data['stats']['total_phds']} ph.d.-afhandlinger fra Datalogisk Institut, Aarhus Universitet ({analysis_data['stats']['year_span']}). Udforsk akademiske stamtræer, vejlederkæder og statistikker.">
+    <meta name="keywords" content="ph.d., phd, datalogisk institut, aarhus universitet, akademiske stamtræer, vejlederkæder, computer science">
+    <meta name="author" content="Simon Tjell, simplesystemer.dk">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
