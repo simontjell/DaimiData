@@ -13,14 +13,6 @@ Automatiseret analyse og visualisering af ph.d.-afhandlinger fra Datalogisk Inst
 - **Data Cleaning**: Automatic correction of date errors and name variations
 - **GitHub Pages Deployment**: Live site updated automatically
 
-## 🔍 Key Findings
-
-- **373 PhD dissertations** from 1975-2025
-- **Longest academic chain**: 5 generations spanning 48 years
-  - Arto Salomaa → Sven Skyum (1975) → Peter Bro Miltersen (1993) → Kristoffer Arnsfelt Hansen (2006) → Kasper Høgh (2023)
-- **Most productive supervisor**: Kaj Grønbæk with 26 PhD students
-- **Largest academic family**: Morten Kyng with 55 descendants
-
 ## 🚀 How It Works
 
 ### 1. Data Fetching (`fetch_data.py`)
