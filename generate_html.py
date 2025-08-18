@@ -178,7 +178,21 @@ def analyze_data(phd_data):
     
     # 3. Longest chains - show top 5 by length
     chains = find_supervisor_chains(phd_data)
-    longest_chains = sorted(chains, key=lambda x: x['length'], reverse=True)[:5]
+    # Group chains by their prefix to avoid showing chains that only differ in the last element
+    unique_chains = []
+    seen_prefixes = set()
+    
+    for chain in chains:
+        # Create prefix by removing the last element
+        if len(chain['path']) > 1:
+            prefix = tuple(chain['path'][:-1])
+            if prefix not in seen_prefixes:
+                seen_prefixes.add(prefix)
+                unique_chains.append(chain)
+        else:
+            unique_chains.append(chain)
+    
+    longest_chains = sorted(unique_chains, key=lambda x: x['length'], reverse=True)[:10]
     
     # 4. Supervisors with most descendants
     supervisor_descendants = {}
