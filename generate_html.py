@@ -4,34 +4,9 @@ Script to analyze PhD data and generate interactive HTML report.
 Includes supervisor chains, hierarchies, and comprehensive statistics.
 """
 import json
-import re
 from collections import defaultdict
 from datetime import datetime
-
-def parse_supervisors(supervisor_str):
-    """Parse supervisor string to extract individual names"""
-    if not supervisor_str:
-        return []
-    supervisors = re.split(r',\s*|\s+and\s+|\s+&\s+|\s+og\s+', supervisor_str)
-    return [s.strip() for s in supervisors if s.strip()]
-
-def normalize_name(name):
-    """Normalize names to handle variations"""
-    name_map = {
-        'Clemens Klokmose': 'Clemens Nylandsted Klokmose',
-        'Christian N. S. Pedersen': 'Christian N. Storm Pedersen',
-        'Christian Nørgaard Storm Pedersen': 'Christian N. Storm Pedersen',
-        'Christian Storm Pedersen': 'Christian N. Storm Pedersen',
-        'Jesper Buus': 'Jesper Buus Nielsen',
-        'Ivan Damgaard': 'Ivan Bjerre Damgård',
-        'Ivan Damgård': 'Ivan Bjerre Damgård',
-        'Gerth S. Brodal': 'Gerth Stølting Brodal',
-        'Peter Mosses': 'Peter D. Mosses',
-        'Michael Schwartzbach': 'Michael I. Schwartzbach',
-        'Marianne Graves': 'Marianne Graves Petersen',
-        'Jakob Bardram': 'Jakob Eyvind Bardram',
-    }
-    return name_map.get(name, name)
+from name_utils import parse_supervisors, normalize_name
 
 def find_supervisor_chains(phd_data):
     """Find all supervisor chains where students became supervisors"""

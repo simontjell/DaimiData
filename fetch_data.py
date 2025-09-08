@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 from datetime import datetime
+from name_utils import normalize_name
 
 def fix_year(date_str):
     """Fix common year errors in dates"""
