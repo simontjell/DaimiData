@@ -3331,30 +3331,30 @@
   },
   {
     "number": 372,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Rolf Svenning",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "29-09-2025",
+    "date": "2025-09-29",
+    "year": 2025,
+    "title": "Scalable Algorithms and Persistent Data Structures using Geometric Techniques"
   },
   {
     "number": 373,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Casper Møldrup Rysgaard",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "30-09-2025",
+    "date": "2025-09-30",
+    "year": 2025,
+    "title": "A Journey through Persistence, External Memory, Trees and other Unrelated Problems"
   },
   {
     "number": 374,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Jens Kristian Refsgaard Schou",
+    "supervisors": "Gerth Stølting Brodal",
+    "date_raw": "03-10-2025",
+    "date": "2025-10-03",
+    "year": 2025,
+    "title": "Algorithmic innovation through Persistence, Topology and Geometry"
   },
   {
     "number": 375,
