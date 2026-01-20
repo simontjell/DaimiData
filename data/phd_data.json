@@ -3358,84 +3358,84 @@
   },
   {
     "number": 375,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Mathias Nørhede Lystbæk",
+    "supervisors": "Ken Pfeuffer",
+    "date_raw": "31-10-2025",
+    "date": "2025-10-31",
+    "year": 2025,
+    "title": "Eyes Helping Hands: Gaze-Assisted Hand Interaction in Extended Reality"
   },
   {
     "number": 376,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Christoph Albert Johns",
+    "supervisors": "Ken Pfeuffer",
+    "date_raw": "31-10-2025",
+    "date": "2025-10-31",
+    "year": 2025,
+    "title": "Model-Based User Interface Optimization Under Contextual Uncertainty"
   },
   {
     "number": 377,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Sergei Stepanenko",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "06-11-2025",
+    "date": "2025-11-06",
+    "year": 2025,
+    "title": "Formal Reasoning for Modern Programming Languages"
   },
   {
     "number": 378,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Lasse Letager Hansen",
+    "supervisors": "Bas Spitters",
+    "date_raw": "17-11-2025",
+    "date": "2025-11-17",
+    "year": 2025,
+    "title": "High Assurance Cryptographic Software using Rust and Rocq"
   },
   {
     "number": 379,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Pavel Manakhov",
+    "supervisors": "Hans Gellersen",
+    "date_raw": "17-11-2025",
+    "date": "2025-11-17",
+    "year": 2025,
+    "title": "3D UI Placement for Interaction on the Go"
   },
   {
     "number": 380,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Maxime Robert Sébastien Legoupil",
+    "supervisors": "Lars Birkedal",
+    "date_raw": "20-11-2025",
+    "date": "2025-11-20",
+    "year": 2025,
+    "title": "Formal Reasoning about WebAssembly and Extentions"
   },
   {
     "number": 381,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Sebastian Kolby",
+    "supervisors": "Sophia Yakoubov",
+    "date_raw": "25-11-2025",
+    "date": "2025-11-25",
+    "year": 2025,
+    "title": "Studies on Scalable Security"
   },
   {
     "number": 382,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Mikael Møller Høgsgaard",
+    "supervisors": "Kasper Green Larsen",
+    "date_raw": "27-11-2025",
+    "date": "2025-11-27",
+    "year": 2025,
+    "title": "Guarantees and Insights in Ensemble Learning"
   },
   {
     "number": 383,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Jonathan Lindegaard Starup",
+    "supervisors": "Magnus Madsen",
+    "date_raw": "28-11-2025",
+    "date": "2025-11-28",
+    "year": 2025,
+    "title": "Safety in Types and Effects"
   },
   {
     "number": 384,
