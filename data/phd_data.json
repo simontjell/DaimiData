@@ -3439,15 +3439,78 @@
   },
   {
     "number": 384,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Konstantinos Skitsas",
+    "supervisors": "Panagiotis Karras",
+    "date_raw": "09-01-2026",
+    "date": "2026-01-09",
+    "year": 2026,
+    "title": "Graph-based Reasoning: Effective Mapping and Planning on Graphs"
   },
   {
     "number": 385,
+    "name": "Matthew Lutze",
+    "supervisors": "Magnus Madsen",
+    "date_raw": "23-01-2026",
+    "date": "2026-01-23",
+    "year": 2026,
+    "title": "On Effects, Inference and Type Flow"
+  },
+  {
+    "number": 386,
+    "name": "Qianqian Mu",
+    "supervisors": "Eve Hoggan",
+    "date_raw": "30-01-2026",
+    "date": "2026-01-30",
+    "year": 2026,
+    "title": "Exploring Backchannel Communication in Hybrid Meetings"
+  },
+  {
+    "number": 387,
+    "name": "Hannah Josephine Keller",
+    "supervisors": "Claudio Orlandi",
+    "date_raw": "20-02-2026",
+    "date": "2026-02-20",
+    "year": 2026,
+    "title": "Distributed Differential Privacy Using Cryptographic Techniques"
+  },
+  {
+    "number": 388,
+    "name": "Sudarshan Shyam",
+    "supervisors": "Iannis Caragiannis",
+    "date_raw": "16-03-2026",
+    "date": "2026-03-16",
+    "year": 2026,
+    "title": "Algorithms and Complexity for Constrained Fair Division, Discrepancy, and Packing"
+  },
+  {
+    "number": 389,
+    "name": "Sebastian Homrighausen",
+    "supervisors": "Iannis Caragiannis",
+    "date_raw": "18-03-2026",
+    "date": "2026-03-18",
+    "year": 2026,
+    "title": "A Tale of Social Choice Mechanisms"
+  },
+  {
+    "number": 390,
+    "name": "Pernille Matthews",
+    "supervisors": "Ira Assent",
+    "date_raw": "29-04-2026",
+    "date": "2026-04-29",
+    "year": 2026,
+    "title": "Structure-Guided Explainability: From Regional to Counterfactual Explanations"
+  },
+  {
+    "number": 391,
+    "name": "Amalie Brogaard Pauli",
+    "supervisors": "Ira Assent",
+    "date_raw": "29-05-2026",
+    "date": "2026-05-29",
+    "year": 2026,
+    "title": "Persuasive Language and Style in Text: Reliability, Validity, and Efficiency"
+  },
+  {
+    "number": 392,
     "name": "",
     "supervisors": "",
     "date_raw": "",
@@ -3456,7 +3519,7 @@
     "title": ""
   },
   {
-    "number": 386,
+    "number": 393,
     "name": "",
     "supervisors": "",
     "date_raw": "",
