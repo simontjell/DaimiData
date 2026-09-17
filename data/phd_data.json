@@ -3511,12 +3511,12 @@
   },
   {
     "number": 392,
-    "name": "",
-    "supervisors": "",
-    "date_raw": "",
-    "date": null,
-    "year": null,
-    "title": ""
+    "name": "Jakob Burkhardt",
+    "supervisors": "Claudio Orlandi",
+    "date_raw": "27-08-2026",
+    "date": "2026-08-27",
+    "year": 2026,
+    "title": "Efficient, Secure, Private: Protocols for a Distributed World"
   },
   {
     "number": 393,
